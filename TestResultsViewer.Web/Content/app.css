@@ -1,5 +1,6 @@
 ﻿body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    overflow-y: scroll;
 }
 
 .testResult {
