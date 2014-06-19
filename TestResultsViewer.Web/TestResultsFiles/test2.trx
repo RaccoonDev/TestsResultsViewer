@@ -1,0 +1,1344 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b857dc57-e329-4757-8eea-aaf34f8f5cbf" name="SYSTEM@UN-S-DVAPP-368 2014-06-19 10:12:24" runUser="NT AUTHORITY\SYSTEM" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Automation" id="90f7bc81-2ab2-4f3c-85f5-22609c489cca">
+    <Description>These are default test settings for a local test run.
+These are test setting for build machine. Including required deployment items.</Description>
+    <Deployment runDeploymentRoot="SYSTEM_UN-S-DVAPP-368 2014-06-19 10_12_24">
+      <DeploymentItem filename="packages\Selenium.WebDriver.IEDriver.2.41.0.1\content\IEDriverServer.exe" />
+      <DeploymentItem filename="packages\EntityFramework.6.1.0\lib\net40\EntityFramework.SqlServer.dll" />
+      <DeploymentItem filename="TestData\" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+      </TestTypeSpecific>
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-19T10:12:24.8715141-04:00" queuing="2014-06-19T10:12:25.5277725-04:00" start="2014-06-19T10:12:25.7465253-04:00" finish="2014-06-19T10:25:52.1338355-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="32" executed="29" passed="18" error="0" failed="7" timeout="0" aborted="0" inconclusive="4" passedButRunAborted="0" notRunnable="3" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="UN-S-DVAPP-368" outcome="Warning" timestamp="2014-06-19T10:12:25.3402701-04:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'EntityFramework' directly or indirectly referenced by deployment item 'packages\EntityFramework.6.1.0\lib\net40\EntityFramework.SqlServer.dll' specified by the test settings was not found.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Facets_SearchForMemberBySubscriberIDAndSuffix" storage="trizetto.web.im.automation.tests.dll" id="d6b478a3-0d16-324e-bff8-116cd50a2c09">
+      <Description>Facets - Search for member by SubscriberID and Suffix</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="Facets" />
+        <TestCategoryItem TestCategory="MemberSearch" />
+      </TestCategory>
+      <Execution id="6212826e-c6fb-4cc2-874a-03d948a037fe" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberSearchFacets</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMemberManagement.MemberSearchFacetsFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Facets_SearchForMemberBySubscriberIDAndSuffix" />
+    </UnitTest>
+    <UnitTest name="Facets_SearchForMemberBySubscriberIDOnly" storage="trizetto.web.im.automation.tests.dll" id="a8422368-38c3-8393-95c9-05ba1e77ebdf">
+      <Description>Facets - Search for member by SubscriberID only</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="Facets" />
+        <TestCategoryItem TestCategory="MemberSearch" />
+      </TestCategory>
+      <Execution id="2302685f-4fe2-4571-ace0-990ddb56805a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberSearchFacets</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMemberManagement.MemberSearchFacetsFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Facets_SearchForMemberBySubscriberIDOnly" />
+    </UnitTest>
+    <UnitTest name="HIPCopy" storage="trizetto.web.im.automation.tests.dll" id="0a42689b-12bc-079c-ddb1-0763fdcebd7c">
+      <Description>HIP Copy</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="regression" />
+        <TestCategoryItem TestCategory="smoketest" />
+      </TestCategory>
+      <Execution id="d6905002-f0c9-4331-a0d3-896a58a72c6a" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>HIPCopy</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPCopyFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HIPCopy" />
+    </UnitTest>
+    <UnitTest name="OpenMemberUIOnBehalfOfCSR" storage="trizetto.web.im.automation.tests.dll" id="9cc09715-8865-976d-9514-570abaa6c6a0">
+      <Description>Open Member UI on behalf of CSR</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+      </TestCategory>
+      <Execution id="3c9e7eff-195b-444d-b669-b674bf2482ca" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Open VBB Member UI as CSR on behalf of member</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMember.OpenVBBMemberUIAsCSROnBehalfOfMemberFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OpenMemberUIOnBehalfOfCSR" />
+    </UnitTest>
+    <UnitTest name="DeletionHipWithInactiveStatus" storage="trizetto.web.im.automation.tests.dll" id="6aaeabff-dce1-498d-6e05-e634e5d58734">
+      <Description>Deletion Hip With Inactive Status</Description>
+      <Execution id="210ccfed-950f-480c-92db-1d0b8dc040da" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>DeletionInavtiveHIP from the Payer Portal</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.DeletionHIP.DeletionInavtiveHIPFromThePayerPortalFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeletionHipWithInactiveStatus" />
+    </UnitTest>
+    <UnitTest name="Facets_SearchForMemberByAllValues" storage="trizetto.web.im.automation.tests.dll" id="5c4d3424-720d-fa54-f407-2860fc2fe32b">
+      <Description>Facets - Search for member by all values</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="Facets" />
+        <TestCategoryItem TestCategory="MemberSearch" />
+      </TestCategory>
+      <Execution id="cc9f2493-2fbd-4947-8b17-9999d6717fab" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberSearchFacets</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMemberManagement.MemberSearchFacetsFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Facets_SearchForMemberByAllValues" />
+    </UnitTest>
+    <UnitTest name="Facets_SearchForMemberByFirstNameAndLastName" storage="trizetto.web.im.automation.tests.dll" id="c325bd11-5573-9e78-6f8f-3628096ce52e">
+      <Description>Facets - Search for member by First Name and Last Name</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="Facets" />
+        <TestCategoryItem TestCategory="MemberSearch" />
+      </TestCategory>
+      <Execution id="620c50a3-5a9c-45b5-8f0c-f1f260e1661d" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberSearchFacets</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMemberManagement.MemberSearchFacetsFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Facets_SearchForMemberByFirstNameAndLastName" />
+    </UnitTest>
+    <UnitTest name="CreateVendor" storage="trizetto.web.im.automation.tests.dll" id="f39c9f8e-28c1-51e8-4693-2cc3be6e67f1">
+      <Description>Create Vendor</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="fast" />
+        <TestCategoryItem TestCategory="smoketest" />
+      </TestCategory>
+      <Execution id="f7d23f0d-f618-49fd-afa3-5732e59fece4" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>VendorCreation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.Vendor.VendorCreationFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateVendor" />
+    </UnitTest>
+    <UnitTest name="FireFoxAvailable" storage="trizetto.web.im.automation.tests.dll" id="6d39dc22-80ac-b5ab-15d8-a509d903202f">
+      <Execution id="2d13266f-e5da-4f71-ae90-37fe91867428" />
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.CoreSmoke.CoreSmokeTestsSteps, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FireFoxAvailable" />
+    </UnitTest>
+    <UnitTest name="QNXT_SearchForDependentMemberByHealthPlanID" storage="trizetto.web.im.automation.tests.dll" id="5ffab15e-8b95-0096-3765-9b43502157a0">
+      <Description>QNXT - Search for Dependent Member by HealthPlanID</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="QNXT" />
+        <TestCategoryItem TestCategory="MemberSearch" />
+      </TestCategory>
+      <Execution id="ff375672-bd0c-4c03-8d4c-ab5e5e565f5c" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberSearchQNXT</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMemberManagement.MemberSearchQNXTFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QNXT_SearchForDependentMemberByHealthPlanID" />
+    </UnitTest>
+    <UnitTest name="AddNewCodeTypeTerminationReason" storage="trizetto.web.im.automation.tests.dll" id="78f56fac-dd11-f5ee-b0f4-b1fa44323812">
+      <Description>Add new code type termination reason</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+      </TestCategory>
+      <Execution id="24c89620-4048-4ca5-9ddb-fa5d9b6e9c83" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Add Code Type Health Incentive Program Term Reason</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.CodeTypes.AddCodeTypeHealthIncentiveProgramTermReasonFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddNewCodeTypeTerminationReason" />
+    </UnitTest>
+    <UnitTest name="OpenMemberUi" storage="trizetto.web.im.automation.tests.dll" id="b4d810e9-4618-c4e7-2012-51c8327ef7c0">
+      <Execution id="e397e352-1b86-4595-8513-844667dd3526" />
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.CoreSmoke.TestsSandbox, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OpenMemberUi" />
+    </UnitTest>
+    <UnitTest name="ViewReadonlyFunctionalParameter" storage="trizetto.web.im.automation.tests.dll" id="4ba0cd4c-8fdb-6503-f87e-fe87929d8add">
+      <Description>View readonly functional parameter</Description>
+      <Execution id="9d95162c-7093-4697-8ec8-f175bdad55fc" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>System Parameters Configuration</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.SystemParametersConfigurationFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ViewReadonlyFunctionalParameter" />
+    </UnitTest>
+    <UnitTest name="RemoveComponentDependency" storage="trizetto.web.im.automation.tests.dll" id="7291daf0-0434-0801-7566-0af0cb9e7d6d">
+      <Description>Remove Component Dependency</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+      </TestCategory>
+      <Execution id="23d483ed-600f-4881-ab74-5027aaf933b4" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>RemoveDependency</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.Component.Dependency.RemoveDependencyFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveComponentDependency" />
+    </UnitTest>
+    <UnitTest name="QNXT_SearchForMemberByHealthPlanIDOnly" storage="trizetto.web.im.automation.tests.dll" id="860f3ab9-bd91-7e64-1b4b-1e1a4ee2dfef">
+      <Description>QNXT - Search for member by HealthPlanID only</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="QNXT" />
+        <TestCategoryItem TestCategory="MemberSearch" />
+      </TestCategory>
+      <Execution id="2d358c6c-23cf-43e3-b559-b22879c1f9f9" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberSearchQNXT</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMemberManagement.MemberSearchQNXTFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QNXT_SearchForMemberByHealthPlanIDOnly" />
+    </UnitTest>
+    <UnitTest name="AddNewConditionCode" storage="trizetto.web.im.automation.tests.dll" id="3c801763-1968-b563-c039-de75d7e70c3e">
+      <Description>Add new Condition Code</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+      </TestCategory>
+      <Execution id="ca784ae2-42d3-4686-9ce0-79ef2fd76289" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberAttributes</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Attributes.MemberAttributesFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddNewConditionCode" />
+    </UnitTest>
+    <UnitTest name="Open" storage="trizetto.web.im.automation.tests.dll" id="59758c0f-8e4b-7569-850f-357b180b41f3">
+      <Execution id="e72d5ed5-3e3d-47bd-93d4-3b99293e2c80" />
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.CoreSmoke.TestsSandbox, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Open" />
+    </UnitTest>
+    <UnitTest name="AddNewRewardLimitReason" storage="trizetto.web.im.automation.tests.dll" id="58951bea-b97f-343e-964d-b1ff65d45347">
+      <Description>Add new reward limit reason</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+      </TestCategory>
+      <Execution id="97e22489-f21d-497b-b378-97241344a282" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Add Reward Limit Reason</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.CodeTypes.AddRewardLimitReasonFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddNewRewardLimitReason" />
+    </UnitTest>
+    <UnitTest name="UpdateAssociationListViaFileProcessing" storage="trizetto.web.im.automation.tests.dll" id="c5cf24df-01d6-a8ab-4cbf-d6eccd4cf8cc">
+      <Description>Update Association List via File processing</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="fileprocessing" />
+        <TestCategoryItem TestCategory="smoketest" />
+      </TestCategory>
+      <Execution id="10382b7a-7116-40a2-92ce-9485f91bdebc" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>UpdateAssociationList</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.FileProcessing.AssociationList.UpdateAssociationListFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateAssociationListViaFileProcessing" />
+    </UnitTest>
+    <UnitTest name="BasicHIPImportPreview" storage="trizetto.web.im.automation.tests.dll" id="427bea5b-4306-e5a7-03d6-d0a8291c0007">
+      <Description>Basic HIP Import Preview</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="hipImportPreview" />
+        <TestCategoryItem TestCategory="smoketest" />
+      </TestCategory>
+      <Execution id="be678262-43b1-4316-a4ae-c32586c2e58e" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Hip Import Preview</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HipImportPreviewFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicHIPImportPreview" />
+    </UnitTest>
+    <UnitTest name="ImportOfExistingHIP" storage="trizetto.web.im.automation.tests.dll" id="b38ffb97-8261-2e77-64a0-b4038e08c5bc">
+      <Description>Import of Existing HIP</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="hipImportPreview" />
+      </TestCategory>
+      <Execution id="e9bc9ac8-19a1-4162-9b3b-d45a4afff7db" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Hip Import Preview</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HipImportPreviewFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ImportOfExistingHIP" />
+    </UnitTest>
+    <UnitTest name="QNXT_SearchForMemberByFirstNameAndLastName" storage="trizetto.web.im.automation.tests.dll" id="5955de4d-ab98-a39f-a85b-8548148d8b76">
+      <Description>QNXT - Search for member by First Name and Last Name</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="MemberSearch" />
+        <TestCategoryItem TestCategory="QNXT" />
+      </TestCategory>
+      <Execution id="4bfeba4f-8d14-4bc3-bb80-fb2d184dda94" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberSearchQNXT</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMemberManagement.MemberSearchQNXTFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QNXT_SearchForMemberByFirstNameAndLastName" />
+    </UnitTest>
+    <UnitTest name="QNXT_SearchForMemberByAllValues" storage="trizetto.web.im.automation.tests.dll" id="c7e72321-97a3-961a-4051-3c86b65c1abd">
+      <Description>QNXT - Search for member by all values</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="QNXT" />
+        <TestCategoryItem TestCategory="MemberSearch" />
+      </TestCategory>
+      <Execution id="d7793bf6-76b1-4452-9009-835124d7e168" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberSearchQNXT</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMemberManagement.MemberSearchQNXTFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QNXT_SearchForMemberByAllValues" />
+    </UnitTest>
+    <UnitTest name="OpenPayerUi" storage="trizetto.web.im.automation.tests.dll" id="a001425d-39d4-cda1-8588-abce6e0386f2">
+      <Execution id="27ae7042-e832-4a40-9a53-7f929fa41632" />
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.CoreSmoke.TestsSandbox, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OpenPayerUi" />
+    </UnitTest>
+    <UnitTest name="AddNewUniqueComponentToActiveHIP" storage="trizetto.web.im.automation.tests.dll" id="01116a7d-ad29-4d51-1192-c720280fc0ed">
+      <Description>Add new unique component to active HIP</Description>
+      <Execution id="e896022b-6f85-46e2-97ae-4e0cb31a4802" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Add Component</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.AddComponentFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddNewUniqueComponentToActiveHIP" />
+    </UnitTest>
+    <UnitTest name="ViewAndUpdateNotReadonlyFunctionalParameter" storage="trizetto.web.im.automation.tests.dll" id="5897a054-2cff-d72d-89c7-787d02d2cb25">
+      <Description>View and update not readonly functional parameter</Description>
+      <Execution id="1ce7cb04-a051-474c-a6c9-cb7090acccc8" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>System Parameters Configuration</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.SystemParametersConfigurationFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ViewAndUpdateNotReadonlyFunctionalParameter" />
+    </UnitTest>
+    <UnitTest name="CreateBasicHip" storage="trizetto.web.im.automation.tests.dll" id="f59d3811-62ff-b2fb-5327-27d02a079540">
+      <Description>Create Basic Hip</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="fast" />
+      </TestCategory>
+      <Execution id="8970e87d-6da4-499e-9d6e-40f21c7a4a73" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>HipCreation</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HipCreationFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateBasicHip" />
+    </UnitTest>
+    <UnitTest name="ViewReadonlyTechnicalParameter" storage="trizetto.web.im.automation.tests.dll" id="3699da0f-3dec-d95f-af7e-3b0aa8ae9584">
+      <Description>View readonly technical parameter</Description>
+      <Execution id="b8469dcd-4061-4791-9d2d-dd54f5a48051" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>System Parameters Configuration</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.SystemParametersConfigurationFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ViewReadonlyTechnicalParameter" />
+    </UnitTest>
+    <UnitTest name="QNXT_SearchForFamilyMembersByPartialHealthPlanID" storage="trizetto.web.im.automation.tests.dll" id="aa3c5988-1e92-bd8e-d925-c0e63c00cf30">
+      <Description>QNXT - Search for Family Members by partial HealthPlanID</Description>
+      <TestCategory>
+        <TestCategoryItem TestCategory="smoketest" />
+        <TestCategoryItem TestCategory="MemberSearch" />
+        <TestCategoryItem TestCategory="QNXT" />
+      </TestCategory>
+      <Execution id="653fce6b-e506-478a-8d9c-96b8c8b4bd98" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>MemberSearchQNXT</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMemberManagement.MemberSearchQNXTFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QNXT_SearchForFamilyMembersByPartialHealthPlanID" />
+    </UnitTest>
+    <UnitTest name="ViewAndUpdateNotReadonlyTechnicalParameter" storage="trizetto.web.im.automation.tests.dll" id="1900bb4b-3160-7d6d-3b53-cb87e12a331e">
+      <Description>View and update not readonly technical parameter</Description>
+      <Execution id="7df87cdb-e838-4e26-a665-17f945effca4" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>System Parameters Configuration</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.SystemParametersConfigurationFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ViewAndUpdateNotReadonlyTechnicalParameter" />
+    </UnitTest>
+    <UnitTest name="EligibilityIsEditableForAciteHIP" storage="trizetto.web.im.automation.tests.dll" id="1bcb2711-ef55-6a57-022e-69d630a6a2c5">
+      <Description>Eligibility is editable for acite HIP</Description>
+      <Execution id="004f0e34-aa3e-4a15-b06f-01eb3ee14cde" />
+      <Properties>
+        <Property>
+          <Key>FeatureTitle</Key>
+          <Value>Edit Eligibility</Value>
+        </Property>
+      </Properties>
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.EditEligibilityFeature, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EligibilityIsEditableForAciteHIP" />
+    </UnitTest>
+    <UnitTest name="InternetExplorerAvailable" storage="trizetto.web.im.automation.tests.dll" id="8f4d25fc-1b6c-dbb1-04fc-9d5f293c46f0">
+      <Execution id="b4c1112d-4c14-4d8f-9d7c-2df294c4111e" />
+      <TestMethod codeBase="C:/DeploymentDrop/AutomationSuite/Trizetto.Web.IM.Automation.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Trizetto.Web.IM.Automation.Tests.CoreSmoke.CoreSmokeTestsSteps, Trizetto.Web.IM.Automation.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InternetExplorerAvailable" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6d39dc22-80ac-b5ab-15d8-a509d903202f" executionId="2d13266f-e5da-4f71-ae90-37fe91867428" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f4d25fc-1b6c-dbb1-04fc-9d5f293c46f0" executionId="b4c1112d-4c14-4d8f-9d7c-2df294c4111e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59758c0f-8e4b-7569-850f-357b180b41f3" executionId="e72d5ed5-3e3d-47bd-93d4-3b99293e2c80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4d810e9-4618-c4e7-2012-51c8327ef7c0" executionId="e397e352-1b86-4595-8513-844667dd3526" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a001425d-39d4-cda1-8588-abce6e0386f2" executionId="27ae7042-e832-4a40-9a53-7f929fa41632" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3c801763-1968-b563-c039-de75d7e70c3e" executionId="ca784ae2-42d3-4686-9ce0-79ef2fd76289" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78f56fac-dd11-f5ee-b0f4-b1fa44323812" executionId="24c89620-4048-4ca5-9ddb-fa5d9b6e9c83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58951bea-b97f-343e-964d-b1ff65d45347" executionId="97e22489-f21d-497b-b378-97241344a282" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5897a054-2cff-d72d-89c7-787d02d2cb25" executionId="1ce7cb04-a051-474c-a6c9-cb7090acccc8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1900bb4b-3160-7d6d-3b53-cb87e12a331e" executionId="7df87cdb-e838-4e26-a665-17f945effca4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ba0cd4c-8fdb-6503-f87e-fe87929d8add" executionId="9d95162c-7093-4697-8ec8-f175bdad55fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3699da0f-3dec-d95f-af7e-3b0aa8ae9584" executionId="b8469dcd-4061-4791-9d2d-dd54f5a48051" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5cf24df-01d6-a8ab-4cbf-d6eccd4cf8cc" executionId="10382b7a-7116-40a2-92ce-9485f91bdebc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7291daf0-0434-0801-7566-0af0cb9e7d6d" executionId="23d483ed-600f-4881-ab74-5027aaf933b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6aaeabff-dce1-498d-6e05-e634e5d58734" executionId="210ccfed-950f-480c-92db-1d0b8dc040da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a42689b-12bc-079c-ddb1-0763fdcebd7c" executionId="d6905002-f0c9-4331-a0d3-896a58a72c6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f59d3811-62ff-b2fb-5327-27d02a079540" executionId="8970e87d-6da4-499e-9d6e-40f21c7a4a73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="01116a7d-ad29-4d51-1192-c720280fc0ed" executionId="e896022b-6f85-46e2-97ae-4e0cb31a4802" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1bcb2711-ef55-6a57-022e-69d630a6a2c5" executionId="004f0e34-aa3e-4a15-b06f-01eb3ee14cde" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="427bea5b-4306-e5a7-03d6-d0a8291c0007" executionId="be678262-43b1-4316-a4ae-c32586c2e58e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b38ffb97-8261-2e77-64a0-b4038e08c5bc" executionId="e9bc9ac8-19a1-4162-9b3b-d45a4afff7db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9cc09715-8865-976d-9514-570abaa6c6a0" executionId="3c9e7eff-195b-444d-b669-b674bf2482ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c4d3424-720d-fa54-f407-2860fc2fe32b" executionId="cc9f2493-2fbd-4947-8b17-9999d6717fab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c325bd11-5573-9e78-6f8f-3628096ce52e" executionId="620c50a3-5a9c-45b5-8f0c-f1f260e1661d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d6b478a3-0d16-324e-bff8-116cd50a2c09" executionId="6212826e-c6fb-4cc2-874a-03d948a037fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8422368-38c3-8393-95c9-05ba1e77ebdf" executionId="2302685f-4fe2-4571-ace0-990ddb56805a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ffab15e-8b95-0096-3765-9b43502157a0" executionId="ff375672-bd0c-4c03-8d4c-ab5e5e565f5c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa3c5988-1e92-bd8e-d925-c0e63c00cf30" executionId="653fce6b-e506-478a-8d9c-96b8c8b4bd98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c7e72321-97a3-961a-4051-3c86b65c1abd" executionId="d7793bf6-76b1-4452-9009-835124d7e168" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5955de4d-ab98-a39f-a85b-8548148d8b76" executionId="4bfeba4f-8d14-4bc3-bb80-fb2d184dda94" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="860f3ab9-bd91-7e64-1b4b-1e1a4ee2dfef" executionId="2d358c6c-23cf-43e3-b559-b22879c1f9f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f39c9f8e-28c1-51e8-4693-2cc3be6e67f1" executionId="f7d23f0d-f618-49fd-afa3-5732e59fece4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2d13266f-e5da-4f71-ae90-37fe91867428" testId="6d39dc22-80ac-b5ab-15d8-a509d903202f" testName="FireFoxAvailable" computerName="UN-S-DVAPP-368" duration="00:00:05.7750976" startTime="2014-06-19T10:12:25.7777757-04:00" endTime="2014-06-19T10:12:31.9048073-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d13266f-e5da-4f71-ae90-37fe91867428">
+    </UnitTestResult>
+    <UnitTestResult executionId="b4c1112d-4c14-4d8f-9d7c-2df294c4111e" testId="8f4d25fc-1b6c-dbb1-04fc-9d5f293c46f0" testName="InternetExplorerAvailable" computerName="UN-S-DVAPP-368" duration="00:00:40.7347956" startTime="2014-06-19T10:12:31.9048073-04:00" endTime="2014-06-19T10:13:12.6553289-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4c1112d-4c14-4d8f-9d7c-2df294c4111e">
+    </UnitTestResult>
+    <UnitTestResult executionId="e72d5ed5-3e3d-47bd-93d4-3b99293e2c80" testId="59758c0f-8e4b-7569-850f-357b180b41f3" testName="Open" computerName="UN-S-DVAPP-368" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotRunnable" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e72d5ed5-3e3d-47bd-93d4-3b99293e2c80">
+      <Output>
+        <ErrorInfo>
+          <Message>UTA004: Illegal use of attribute on Trizetto.Web.IM.Automation.Tests.CoreSmoke.TestsSandbox.Open. The TestMethodAttribute can be defined only inside a class marked with the TestClass attribute.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e397e352-1b86-4595-8513-844667dd3526" testId="b4d810e9-4618-c4e7-2012-51c8327ef7c0" testName="OpenMemberUi" computerName="UN-S-DVAPP-368" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotRunnable" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e397e352-1b86-4595-8513-844667dd3526">
+      <Output>
+        <ErrorInfo>
+          <Message>UTA004: Illegal use of attribute on Trizetto.Web.IM.Automation.Tests.CoreSmoke.TestsSandbox.OpenMemberUi. The TestMethodAttribute can be defined only inside a class marked with the TestClass attribute.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="27ae7042-e832-4a40-9a53-7f929fa41632" testId="a001425d-39d4-cda1-8588-abce6e0386f2" testName="OpenPayerUi" computerName="UN-S-DVAPP-368" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotRunnable" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27ae7042-e832-4a40-9a53-7f929fa41632">
+      <Output>
+        <ErrorInfo>
+          <Message>UTA004: Illegal use of attribute on Trizetto.Web.IM.Automation.Tests.CoreSmoke.TestsSandbox.OpenPayerUi. The TestMethodAttribute can be defined only inside a class marked with the TestClass attribute.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ca784ae2-42d3-4686-9ce0-79ef2fd76289" testId="3c801763-1968-b563-c039-de75d7e70c3e" testName="AddNewConditionCode" computerName="UN-S-DVAPP-368" duration="00:00:43.4545038" startTime="2014-06-19T10:13:12.6553289-04:00" endTime="2014-06-19T10:13:56.3922169-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca784ae2-42d3-4686-9ce0-79ef2fd76289">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (27.8s)
+And Member Attributes Page Opened
+-&gt; done: MemberAttributesSteps.GivenMemberAttributesPageOpened() (2.4s)
+And The Member Attribute with Name "ZAUTO Attribute33" does not exist, delete if exist
+-&gt; done: MemberAttributesSteps.GivenTheMemberAttributeWithNameDoesNotExistDeleteIfExist("ZAUTO Attribute33") (5.6s)
+Given Membder attribute parameters are
+  --- table step argument ---
+  | Attribute Name    | Attribute Code | Attribute Type | Data Type | Status   | Display To Member |
+  | ZAUTO Attribute33 | ZAUTO33        | Condition Code |           | Inactive | No                |
+-&gt; done: MemberAttributesSteps.GivenMembderAttributeParametersAre(&lt;table&gt;) (0.0s)
+When I Create Attribute
+-&gt; done: MemberAttributesSteps.WhenICreateAttribute() (2.7s)
+Then Attribute is created
+-&gt; done: MemberAttributesSteps.ThenAttributeIsCreated() (4.5s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="24c89620-4048-4ca5-9ddb-fa5d9b6e9c83" testId="78f56fac-dd11-f5ee-b0f4-b1fa44323812" testName="AddNewCodeTypeTerminationReason" computerName="UN-S-DVAPP-368" duration="00:00:05.1280475" startTime="2014-06-19T10:13:56.3922169-04:00" endTime="2014-06-19T10:14:02.5817493-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24c89620-4048-4ca5-9ddb-fa5d9b6e9c83">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (5.0s)
+And Code Types Page Opened to Health Incentive Program Termination Reason
+-&gt; No matching step definition found for the step. Use the following code to create one:
+        [Given(@"Code Types Page Opened to Health Incentive Program Termination Reason")]
+        public void GivenCodeTypesPageOpenedToHealthIncentiveProgramTerminationReason()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+And Code Type Code Description "Auto Term Reason" does not exist, delete if exist
+-&gt; No matching step definition found for the step. Use the following code to create one:
+        [Given(@"Code Type Code Description ""(.*)"" does not exist, delete if exist")]
+        public void GivenCodeTypeCodeDescriptionDoesNotExistDeleteIfExist(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+Given Term Reason parameters are
+  --- table step argument ---
+  | Code Value | Description      |
+  | 3          | Auto Term Reason |
+-&gt; No matching step definition found for the step. Use the following code to create one:
+        [Given(@"Term Reason parameters are")]
+        public void GivenTermReasonParametersAre(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+When I press Save
+-&gt; No matching step definition found for the step. Use the following code to create one:
+        [When(@"I press Save")]
+        public void WhenIPressSave()
+        {
+            ScenarioContext.Current.Pending();
+        }</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"Code Types Page Opened to Health Incentive Program Termination Reason")]
+        public void GivenCodeTypesPageOpenedToHealthIncentiveProgramTerminationReason()
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Code Type Code Description ""(.*)"" does not exist, delete if exist")]
+        public void GivenCodeTypeCodeDescriptionDoesNotExistDeleteIfExist(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Given(@"Term Reason parameters are")]
+        public void GivenTermReasonParametersAre(Table table)
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [When(@"I press Save")]
+        public void WhenIPressSave()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.CodeTypes.AddCodeTypeHealthIncentiveProgramTermReasonFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\CodeTypes\AddTermReason.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.CodeTypes.AddCodeTypeHealthIncentiveProgramTermReasonFeature.AddNewCodeTypeTerminationReason() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\CodeTypes\AddTermReason.feature:line 16
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="97e22489-f21d-497b-b378-97241344a282" testId="58951bea-b97f-343e-964d-b1ff65d45347" testName="AddNewRewardLimitReason" computerName="UN-S-DVAPP-368" duration="00:00:00.0059133" startTime="2014-06-19T10:14:02.5973745-04:00" endTime="2014-06-19T10:14:03.6442629-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97e22489-f21d-497b-b378-97241344a282">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super"
+-&gt; No matching step definition found for the step. Use the following code to create one:
+        [Given(@"I am logged in to PayerUI as ""(.*)""")]
+        public void GivenIAmLoggedInToPayerUIAs(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+And Code Types Page Opened to Reward Limit Reason
+-&gt; skipped because of previous errors
+And Code Value Code Description "Auto Reward Limit Reason" does not exist, delete if exist
+-&gt; skipped because of previous errors
+Given Reward Limit Reason parameters are
+  --- table step argument ---
+  | Code Value | Description              |
+  | 4          | Auto Reward Limit Reason |
+-&gt; skipped because of previous errors
+When I press Save and Verify
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"I am logged in to PayerUI as ""(.*)""")]
+        public void GivenIAmLoggedInToPayerUIAs(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.CodeTypes.AddRewardLimitReasonFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\CodeTypes\AddRewardLimitReason.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.CodeTypes.AddRewardLimitReasonFeature.AddNewRewardLimitReason() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\CodeTypes\AddRewardLimitReason.feature:line 15
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1ce7cb04-a051-474c-a6c9-cb7090acccc8" testId="5897a054-2cff-d72d-89c7-787d02d2cb25" testName="ViewAndUpdateNotReadonlyFunctionalParameter" computerName="UN-S-DVAPP-368" duration="00:00:10.4532707" startTime="2014-06-19T10:14:03.6598881-04:00" endTime="2014-06-19T10:14:14.1160767-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ce7cb04-a051-474c-a6c9-cb7090acccc8">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.6s)
+Given there is not readonly functional parameter
+-&gt; error: Assert.IsTrue failed. Could not find MemberEnrollmentDate on the page
+When I change the functional parameter value to something else
+-&gt; skipped because of previous errors
+Then new value is saved
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. Could not find MemberEnrollmentDate on the page</Message>
+          <StackTrace>   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.FunctionParamsSteps.GivenThereIsNotReadonlyFunctionalParameter() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\Configuration\FunctionalAndTechnicalParameters\FunctionAndTechnicalParamsSteps.cs:line 30
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.SystemParametersConfigurationFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\Configuration\FunctionalAndTechnicalParameters\FunctionAndTechnicalParams.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.SystemParametersConfigurationFeature.ViewAndUpdateNotReadonlyFunctionalParameter() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\Configuration\FunctionalAndTechnicalParameters\FunctionAndTechnicalParams.feature:line 10
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7df87cdb-e838-4e26-a665-17f945effca4" testId="1900bb4b-3160-7d6d-3b53-cb87e12a331e" testName="ViewAndUpdateNotReadonlyTechnicalParameter" computerName="UN-S-DVAPP-368" duration="00:00:32.0454451" startTime="2014-06-19T10:14:14.1160767-04:00" endTime="2014-06-19T10:14:46.1633619-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7df87cdb-e838-4e26-a665-17f945effca4">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (1.3s)
+Given there is not readonly technical parameter
+-&gt; done: FunctionParamsSteps.GivenThereIsNotReadonlyTechnicalParameter() (7.3s)
+When I change the technical parameter value to something else
+-&gt; done: FunctionParamsSteps.WhenIChangeTheTechnicalParameterValueToSomethingElse() (9.2s)
+Then new value is saved
+-&gt; done: FunctionParamsSteps.ThenNewValueIsSaved() (7.9s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9d95162c-7093-4697-8ec8-f175bdad55fc" testId="4ba0cd4c-8fdb-6503-f87e-fe87929d8add" testName="ViewReadonlyFunctionalParameter" computerName="UN-S-DVAPP-368" duration="00:00:05.2935208" startTime="2014-06-19T10:14:46.1633619-04:00" endTime="2014-06-19T10:14:51.4603047-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d95162c-7093-4697-8ec8-f175bdad55fc">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (1.0s)
+Given there is readonly functional parameter
+-&gt; error: Assert.IsTrue failed. Could not find Member_Disenroll_Email_Template on the page
+When I select the functional parameter
+-&gt; skipped because of previous errors
+Then edit button is disabled and item can't be edited
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Assert.IsTrue failed. Could not find Member_Disenroll_Email_Template on the page</Message>
+          <StackTrace>   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.FunctionParamsSteps.GivenThereIsReadonlyFunctionalParameter() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\Configuration\FunctionalAndTechnicalParameters\FunctionAndTechnicalParamsSteps.cs:line 75
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.SystemParametersConfigurationFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\Configuration\FunctionalAndTechnicalParameters\FunctionAndTechnicalParams.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.Administration.Configuration.FunctionalAndTechnicalParameters.SystemParametersConfigurationFeature.ViewReadonlyFunctionalParameter() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\Administration\Configuration\FunctionalAndTechnicalParameters\FunctionAndTechnicalParams.feature:line 15
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b8469dcd-4061-4791-9d2d-dd54f5a48051" testId="3699da0f-3dec-d95f-af7e-3b0aa8ae9584" testName="ViewReadonlyTechnicalParameter" computerName="UN-S-DVAPP-368" duration="00:00:09.0322286" startTime="2014-06-19T10:14:51.4759299-04:00" endTime="2014-06-19T10:15:00.5229207-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8469dcd-4061-4791-9d2d-dd54f5a48051">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (1.0s)
+Given there is readonly technical parameter
+-&gt; done: FunctionParamsSteps.GivenThereIsReadonlyTechnicalParameter() (6.1s)
+When I select the technical parameter
+-&gt; done: FunctionParamsSteps.WhenISelectTheTechnicalParameter() (0.0s)
+Then edit button is disabled and item can't be edited
+-&gt; done: FunctionParamsSteps.ThenEditButtonIsDisabledAndItemCanTBeEdited() (1.8s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="10382b7a-7116-40a2-92ce-9485f91bdebc" testId="c5cf24df-01d6-a8ab-4cbf-d6eccd4cf8cc" testName="UpdateAssociationListViaFileProcessing" computerName="UN-S-DVAPP-368" duration="00:00:12.8473107" startTime="2014-06-19T10:15:00.5229207-04:00" endTime="2014-06-19T10:15:14.4313019-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="10382b7a-7116-40a2-92ce-9485f91bdebc">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.6s)
+And Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (2.4s)
+And Hip Name is "Test Update Association List"
+-&gt; done: HIPCommonSteps.GivenHipNameIs("Test Update Assoc...") (0.0s)
+And The HIP does not exist, delete if exist
+-&gt; done: HIPCommonSteps.GivenTheHipDoesNotExistDeleteIfExist() (4.2s)
+And Hip Creation Wizard Opened
+-&gt; done: HIPCommonSteps.GivenHipCreationPageOpened() (1.7s)
+When I Create HIP With Basic Settings
+-&gt; No matching step definition found for the step. There are matching step definitions, but none of them have matching scope for this step: HipCreationSteps.CreatingHipWithBasicSetting().
+-&gt; Change the scope or use the following code to create a new step definition:
+        [When(@"I Create HIP With Basic Settings")]
+        public void WhenICreateHIPWithBasicSettings()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+Then Hip Shoould Be Created
+-&gt; No matching step definition found for the step. There are matching step definitions, but none of them have matching scope for this step: HipCreationSteps.ThenHipShoouldBeCreated().
+-&gt; Change the scope or use the following code to create a new step definition:
+        [Then(@"Hip Shoould Be Created")]
+        public void ThenHipShoouldBeCreated()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+Given File Import Page Opened
+-&gt; skipped because of previous errors
+And File name is "AssociatedListSuccess.csv"
+-&gt; skipped because of previous errors
+And Hip name is "Test Update Association List"
+-&gt; skipped because of previous errors
+When I have selected Association list and appropriate file
+-&gt; skipped because of previous errors
+And I press Process and confirm it
+-&gt; skipped because of previous errors
+Then single success message "Your file has been received for processing." should appear
+-&gt; skipped because of previous errors
+And status of the file should be "1" on the File Dashboard page
+-&gt; skipped because of previous errors
+And delete uploaded files from Dashbord
+-&gt; skipped because of previous errors
+And group "EPAM3" should be added to the Customization List on the Health Incentive Program View page
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [When(@"I Create HIP With Basic Settings")]
+        public void WhenICreateHIPWithBasicSettings()
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Then(@"Hip Shoould Be Created")]
+        public void ThenHipShoouldBeCreated()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.FileProcessing.AssociationList.UpdateAssociationListFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\FileProcessing\AssociationList\UpdateAssociationList.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.FileProcessing.AssociationList.UpdateAssociationListFeature.UpdateAssociationListViaFileProcessing() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\FileProcessing\AssociationList\UpdateAssociationList.feature:line 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="23d483ed-600f-4881-ab74-5027aaf933b4" testId="7291daf0-0434-0801-7566-0af0cb9e7d6d" testName="RemoveComponentDependency" computerName="UN-S-DVAPP-368" duration="00:01:52.4066737" startTime="2014-06-19T10:15:14.4469271-04:00" endTime="2014-06-19T10:17:07.9190827-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23d483ed-600f-4881-ab74-5027aaf933b4">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.6s)
+And Hip name is "AUTO HIP two dependent components"
+-&gt; done: RemoveDependencySteps.GivenHipNameIs("AUTO HIP two depe...") (0.0s)
+And Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (2.9s)
+And The HIP does not exist, delete if exist
+-&gt; done: HIPCommonSteps.GivenTheHipDoesNotExistDeleteIfExist() (6.9s)
+And Hip contains components
+  --- table step argument ---
+  | Component Name | Component Type | Has Dependency On |
+  | Component 11   | Unique         |                   |
+  | Component 22   | Unique         | Component 11      |
+-&gt; done: RemoveDependencySteps.GivenHipContainsComponents(&lt;table&gt;) (0.0s)
+And Hip is created as active
+-&gt; done: RemoveDependencySteps.GivenHipIsCreatedAsActive() (84.8s)
+Given Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (2.9s)
+And Hip name is "AUTO HIP two dependent components"
+-&gt; done: RemoveDependencySteps.GivenHipNameIs("AUTO HIP two depe...") (0.0s)
+And Hip edit wizard opened on Component Setup page
+-&gt; done: RemoveDependencySteps.GivenHipEditWizardOpenedOnComponentSetupPage() (6.3s)
+When I remove component "Component 22" on component "Component 11" dependency
+-&gt; done: RemoveDependencySteps.WhenIRemoveComponentOnComponentDependency("Component 22", "Component 11") (1.5s)
+And Save HIP
+-&gt; done: RemoveDependencySteps.WhenSaveHip() (2.3s)
+Then Component "Component 22" does not not have dependency on component "Component 11"
+-&gt; done: RemoveDependencySteps.ThenComponentDoesNotNotHaveDependencyOnComponent("Component 22", "Component 11") (0.1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="210ccfed-950f-480c-92db-1d0b8dc040da" testId="6aaeabff-dce1-498d-6e05-e634e5d58734" testName="DeletionHipWithInactiveStatus" computerName="UN-S-DVAPP-368" duration="00:00:10.1490438" startTime="2014-06-19T10:17:07.9190827-04:00" endTime="2014-06-19T10:17:19.1243043-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="210ccfed-950f-480c-92db-1d0b8dc040da">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.6s)
+And Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (3.0s)
+And I created new basic inactive HIP
+-&gt; error: Create HIP button is not found
+Given Inactive HIP is selected
+-&gt; skipped because of previous errors
+When I click delete button
+-&gt; skipped because of previous errors
+Then Hip Should Be Deleted
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.DeletionHIP.DeletionInavtiveHIPFromThePayerPortalFeature.DeletionHipWithInactiveStatus threw exception: 
+System.Exception: Create HIP button is not found ---&gt; OpenQA.Selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ctl00_cphMain_grdHips_ctl00_ctl02_ctl00_commandItems_create"}</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementById(String id)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClass2.&lt;Id&gt;b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.PayerUiBasePage.ClickElementById(String elementId, String elementDescription) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\PayerUiBasePage.cs:line 153
+ --- End of inner exception stack trace ---
+    at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.PayerUiBasePage.ClickElementById(String elementId, String elementDescription) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\PayerUiBasePage.cs:line 157
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.HealthIncentiveProgramManagement.HealthIncentiveProgramsPage.StartCreatingNewHip() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\HealthIncentiveProgramManagement\HealthIncentiveProgramsPage.cs:line 18
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.Deletion_HIP.DeletionInavtiveHIPSteps.GivenHIPWithInactiveStatus() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\Deletion HIP\DeletionInactiveHIPSteps.cs:line 28
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.DeletionHIP.DeletionInavtiveHIPFromThePayerPortalFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\Deletion HIP\DeletionInactiveHIP.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.DeletionHIP.DeletionInavtiveHIPFromThePayerPortalFeature.DeletionHipWithInactiveStatus() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\Deletion HIP\DeletionInactiveHIP.feature:line 11
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d6905002-f0c9-4331-a0d3-896a58a72c6a" testId="0a42689b-12bc-079c-ddb1-0763fdcebd7c" testName="HIPCopy" computerName="UN-S-DVAPP-368" duration="00:01:56.6077470" startTime="2014-06-19T10:17:19.1243043-04:00" endTime="2014-06-19T10:19:16.7563046-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6905002-f0c9-4331-a0d3-896a58a72c6a">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.5s)
+And Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (2.9s)
+Given HIP to copy is selected
+Given HIP is selected
+-&gt; done: HIPCommonSteps.GivenHIPToCopyIsSelected() (3.3s)
+-&gt; done: HipCopySteps.GivenHIPToCopyIsSelected() (3.3s)
+When I click copy the HIP with some new name
+-&gt; done: HipCopySteps.WhenICopyTheHIPWithNewName() (3.2s)
+Then the HIP should be copied
+-&gt; done: HipCopySteps.ThenTheHIPShouldBeCopied() (1.0s)
+And have same values as original HIP
+-&gt; done: HipCopySteps.ThenHaveSameValuesAsOriginalHIP() (94.2s)
+Given Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (2.3s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8970e87d-6da4-499e-9d6e-40f21c7a4a73" testId="f59d3811-62ff-b2fb-5327-27d02a079540" testName="CreateBasicHip" computerName="UN-S-DVAPP-368" duration="00:00:17.7518106" startTime="2014-06-19T10:19:16.7563046-04:00" endTime="2014-06-19T10:19:35.6490037-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8970e87d-6da4-499e-9d6e-40f21c7a4a73">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.6s)
+And Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (2.6s)
+And Hip Name is "AUTO Created Basic HIP"
+-&gt; done: HIPCommonSteps.GivenHipNameIs("AUTO Created Basi...") (0.0s)
+Given Hip Creation Wizard Opened
+-&gt; error: Create HIP button is not found
+When I Create HIP With Basic Settings
+-&gt; skipped because of previous errors
+Then Hip Shoould Be Created
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HipCreationFeature.CreateBasicHip threw exception: 
+System.Exception: Create HIP button is not found ---&gt; OpenQA.Selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ctl00_cphMain_grdHips_ctl00_ctl02_ctl00_commandItems_create"}</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementById(String id)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClass2.&lt;Id&gt;b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.PayerUiBasePage.ClickElementById(String elementId, String elementDescription) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\PayerUiBasePage.cs:line 153
+ --- End of inner exception stack trace ---
+    at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.PayerUiBasePage.ClickElementById(String elementId, String elementDescription) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\PayerUiBasePage.cs:line 157
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.HealthIncentiveProgramManagement.HealthIncentiveProgramsPage.StartCreatingNewHip() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\HealthIncentiveProgramManagement\HealthIncentiveProgramsPage.cs:line 18
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.Common.HIPCommonSteps.GivenHipCreationPageOpened() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\Common\HIPCommonSteps.cs:line 26
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HipCreationFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\BasicHipCreation.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HipCreationFeature.CreateBasicHip() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\BasicHipCreation.feature:line 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e896022b-6f85-46e2-97ae-4e0cb31a4802" testId="01116a7d-ad29-4d51-1192-c720280fc0ed" testName="AddNewUniqueComponentToActiveHIP" computerName="UN-S-DVAPP-368" duration="00:00:52.8920765" startTime="2014-06-19T10:19:35.6490037-04:00" endTime="2014-06-19T10:20:29.5888021-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e896022b-6f85-46e2-97ae-4e0cb31a4802">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.6s)
+And Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (2.4s)
+Given there is an active HIP
+Given HIP is selected
+-&gt; done: HIPCommonSteps.GivenHIPToCopyIsSelected() (1.1s)
+-&gt; error: Timed out after 40 seconds
+And a member can see the HIP on member portal
+-&gt; skipped because of previous errors
+When new component is added to the HIP
+-&gt; skipped because of previous errors
+Then member can see the component on member portal
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.AddComponentFeature.AddNewUniqueComponentToActiveHIP threw exception: 
+OpenQA.Selenium.WebDriverTimeoutException: Timed out after 40 seconds</Message>
+          <StackTrace>    at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at Trizetto.Web.IM.Automation.Infrastructure.Extensions.WebDriverExtensions.WaitForElementIsHidden(WebDriverWait wait, By locator) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Infrastructure\Extensions\WebDriverExtensions.cs:line 347
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.PayerUiBasePage.WaitLoading() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\PayerUiBasePage.cs:line 33
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.HealthIncentiveProgramManagement.HealthIncentiveProgramsPage.CopySelectedHipWithName(String newHipName) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\HealthIncentiveProgramManagement\HealthIncentiveProgramsPage.cs:line 149
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.AddComponentSteps.GivenAnActiveHIP() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\HIPEditActive\AddComponentSteps.cs:line 37
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.AddComponentFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\HIPEditActive\AddComponent.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.AddComponentFeature.AddNewUniqueComponentToActiveHIP() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\HIPEditActive\AddComponent.feature:line 14
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="004f0e34-aa3e-4a15-b06f-01eb3ee14cde" testId="1bcb2711-ef55-6a57-022e-69d630a6a2c5" testName="EligibilityIsEditableForAciteHIP" computerName="UN-S-DVAPP-368" duration="00:01:15.5948725" startTime="2014-06-19T10:20:29.6044272-04:00" endTime="2014-06-19T10:21:46.2787461-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="004f0e34-aa3e-4a15-b06f-01eb3ee14cde">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (7.3s)
+And Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (3.1s)
+Given there is an active HIP with some enrollments
+Given HIP is selected
+-&gt; done: HIPCommonSteps.GivenHIPToCopyIsSelected() (1.2s)
+Given HIP is selected
+-&gt; done: HIPCommonSteps.GivenHIPToCopyIsSelected() (1.2s)
+-&gt; error: Element is not currently visible and so may not be interacted with
+When go to components page, eligibility section
+-&gt; skipped because of previous errors
+Then I can edit eligibility description
+-&gt; skipped because of previous errors
+And I see eligibility link enabled
+-&gt; skipped because of previous errors
+And I can click that
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.EditEligibilityFeature.EligibilityIsEditableForAciteHIP threw exception: 
+OpenQA.Selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Click()
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.MemberUI.AvailablePrograms.AvailableProgramsPage.EnrollToHip(String hipName) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\MemberUI\AvailablePrograms\AvailableProgramsPage.cs:line 32
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.MemberUI.AvailablePrograms.AvailableProgramsPage.&lt;&gt;c__DisplayClass13.&lt;EnrollToHipWithoutContextChange&gt;b__12() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\MemberUI\AvailablePrograms\AvailableProgramsPage.cs:line 102
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.MemberUI.AvailablePrograms.AvailableProgramsPage.PreserveContext(Action action) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\MemberUI\AvailablePrograms\AvailableProgramsPage.cs:line 127
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.MemberUI.AvailablePrograms.AvailableProgramsPage.EnrollToHipWithoutContextChange(String hipName) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\MemberUI\AvailablePrograms\AvailableProgramsPage.cs:line 102
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.EditEligibilitySteps.GivenThereIsAnActiveHIPWithSomeEnrollments() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\HIPEditActive\EditEligibilitySteps.cs:line 53
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.EditEligibilityFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\HIPEditActive\EditEligibility.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HIPEditActive.EditEligibilityFeature.EligibilityIsEditableForAciteHIP() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\HIPEditActive\EditEligibility.feature:line 15
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="be678262-43b1-4316-a4ae-c32586c2e58e" testId="427bea5b-4306-e5a7-03d6-d0a8291c0007" testName="BasicHIPImportPreview" computerName="UN-S-DVAPP-368" duration="00:00:09.2098384" startTime="2014-06-19T10:21:46.2787461-04:00" endTime="2014-06-19T10:21:56.5776402-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be678262-43b1-4316-a4ae-c32586c2e58e">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.6s)
+And Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (2.9s)
+Given Hip Name is "AUTO Hip Import Preview"
+-&gt; done: HIPCommonSteps.GivenHipNameIs("AUTO Hip Import P...") (0.0s)
+When I click Import
+-&gt; error: Import HIP button is not found
+And Choose file with the HIP
+-&gt; skipped because of previous errors
+And Click Preview
+-&gt; skipped because of previous errors
+Then I see Import Preview
+-&gt; skipped because of previous errors
+And HIP structure:
+  --- table step argument ---
+  | Type                | Name                        | Action         |
+  | Code Value          | Health &amp; Wellness           | already exists |
+  | Vendor Program Type | Education, Asthma           | already exists |
+  | HIP                 | AUTO Hip Import Preview     | to be added    |
+  | Component           | AUTO Hip Import Preview IPC | to be added    |
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Test method Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HipImportPreviewFeature.BasicHIPImportPreview threw exception: 
+System.Exception: Import HIP button is not found ---&gt; OpenQA.Selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ctl00_cphMain_grdHips_ctl00_ctl02_ctl00_commandItems_ImportHipCommandBtn"}</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementById(String id)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClass2.&lt;Id&gt;b__0(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.PayerUiBasePage.ClickElementById(String elementId, String elementDescription) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\PayerUiBasePage.cs:line 153
+ --- End of inner exception stack trace ---
+    at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.PayerUiBasePage.ClickElementById(String elementId, String elementDescription) in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\PayerUiBasePage.cs:line 157
+   at Trizetto.Web.IM.Automation.Web.Pages.Pages.PayerUI.HealthIncentiveProgramManagement.HealthIncentiveProgramsPage.StartImport() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Web.Pages\Pages\PayerUI\HealthIncentiveProgramManagement\HealthIncentiveProgramsPage.cs:line 95
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HipImportPreviewFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\HipImportPreview.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.HIP.HipImportPreviewFeature.BasicHIPImportPreview() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\HIP\HipImportPreview.feature:line 18
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e9bc9ac8-19a1-4162-9b3b-d45a4afff7db" testId="b38ffb97-8261-2e77-64a0-b4038e08c5bc" testName="ImportOfExistingHIP" computerName="UN-S-DVAPP-368" duration="00:00:15.6042941" startTime="2014-06-19T10:21:56.5776402-04:00" endTime="2014-06-19T10:22:12.2027402-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9bc9ac8-19a1-4162-9b3b-d45a4afff7db">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (1.0s)
+And Health Incentive Programs Page Opened
+-&gt; done: HIPCommonSteps.GivenHealthIncentiveProgramsPageOpened() (2.4s)
+Given Hip name is "R2 - HIP for export"
+-&gt; done: RemoveDependencySteps.GivenHipNameIs("R2 - HIP for export") (0.0s)
+And HIP exists
+-&gt; done: HIPCommonSteps.GivenHIPExists() (3.0s)
+When I click Import
+-&gt; done: HipImportPreviewSteps.WhenIClickImport() (0.2s)
+And Choose file with the HIP
+-&gt; done: HipImportPreviewSteps.WhenChooseFileWithTheHip() (0.0s)
+And Click Preview
+-&gt; done: HipImportPreviewSteps.WhenClickPreview() (8.8s)
+Then I see "The HIP Name 'R2 - HIP for export' already exists and thus cannot be imported." error message
+-&gt; done: HipImportPreviewSteps.ThenISeeErrorMessage("The HIP Name 'R2 ...") (0.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3c9e7eff-195b-444d-b669-b674bf2482ca" testId="9cc09715-8865-976d-9514-570abaa6c6a0" testName="OpenMemberUIOnBehalfOfCSR" computerName="UN-S-DVAPP-368" duration="00:00:04.5723372" startTime="2014-06-19T10:22:12.2027402-04:00" endTime="2014-06-19T10:22:17.8141043-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c9e7eff-195b-444d-b669-b674bf2482ca">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.6s)
+And Single Member Management Page Opened
+-&gt; No matching step definition found for the step. Use the following code to create one:
+        [Given(@"Single Member Management Page Opened")]
+        public void GivenSingleMemberManagementPageOpened()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+Given I search for member with First Name "Noah" and Last Name "Mohler"
+-&gt; skipped because of previous errors
+When Member is found
+-&gt; skipped because of previous errors
+And I click on member name
+-&gt; skipped because of previous errors
+Then Member portal is opened in new browser window
+-&gt; skipped because of previous errors</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. No matching step definition found for one or more steps.
+using System;
+using TechTalk.SpecFlow;
+
+namespace MyNamespace
+{
+    [Binding]
+    public class StepDefinitions
+    {
+        [Given(@"Single Member Management Page Opened")]
+        public void GivenSingleMemberManagementPageOpened()
+        {
+            ScenarioContext.Current.Pending();
+        }
+    }
+}
+</Message>
+          <StackTrace>   at lambda_method(Closure , String , Object[] )
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestInconclusive(String message)
+   at TechTalk.SpecFlow.UnitTestProvider.MsTestRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(TestStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMember.OpenVBBMemberUIAsCSROnBehalfOfMemberFeature.ScenarioCleanup() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\MemberManagement\SingleMember\OpenMemberPortalAsCSRSteps.feature.cs:line 0
+   at Trizetto.Web.IM.Automation.Tests.PayerUI.MemberManagement.SingleMember.OpenVBBMemberUIAsCSROnBehalfOfMemberFeature.OpenMemberUIOnBehalfOfCSR() in e:\d\w\21\740\Sources\Automation\Trizetto.Web.IM.Automation.Tests\PayerUI\MemberManagement\SingleMember\OpenMemberPortalAsCSRSteps.feature:line 12
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cc9f2493-2fbd-4947-8b17-9999d6717fab" testId="5c4d3424-720d-fa54-f407-2860fc2fe32b" testName="Facets_SearchForMemberByAllValues" computerName="UN-S-DVAPP-368" duration="00:00:10.2638659" startTime="2014-06-19T10:22:17.8141043-04:00" endTime="2014-06-19T10:22:29.1286299-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc9f2493-2fbd-4947-8b17-9999d6717fab">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.5s)
+And Facets Single Member Management Page Opened
+-&gt; done: MemberSearchFacetsSteps.GivenSingleMemberManagementPageOpened() (2.4s)
+Given Facets Member Search parameters are
+  --- table step argument ---
+  | GroupID  | SubscriberID | Suffix | LastName | FirstName | SSN      | GroupName        | DOB      | Gender | RelationToSubscriber | HIPAA |
+  | BTTESTGP | BTVBB01      | 00     | Lname01  | Fname01   | 98777777 | Bills Test Group | 1/2/1980 | Male   | Subscriber           |       |
+-&gt; done: MemberSearchFacetsSteps.GivenMemberSearchParametersAre(System.Collection...) (0.0s)
+When I perform search using all values
+-&gt; done: MemberSearchFacetsSteps.WhenIPerformSearchUsingAllValues() (3.1s)
+Then Facets Search results are returned and entire row is validated
+-&gt; done: MemberSearchFacetsSteps.ThenSearchResultsAreReturnedAndValidated() (0.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="620c50a3-5a9c-45b5-8f0c-f1f260e1661d" testId="c325bd11-5573-9e78-6f8f-3628096ce52e" testName="Facets_SearchForMemberByFirstNameAndLastName" computerName="UN-S-DVAPP-368" duration="00:00:07.0147937" startTime="2014-06-19T10:22:29.1286299-04:00" endTime="2014-06-19T10:22:36.1599249-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="620c50a3-5a9c-45b5-8f0c-f1f260e1661d">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (1.1s)
+And Facets Single Member Management Page Opened
+-&gt; done: MemberSearchFacetsSteps.GivenSingleMemberManagementPageOpened() (2.4s)
+Given Facets Member Search parameters are
+  --- table step argument ---
+  | GroupID  | SubscriberID | Suffix | LastName | FirstName | SSN      | GroupName        | DOB      | Gender | RelationToSubscriber | HIPAA |
+  | BTTESTGP | BTVBB01      | 00     | Lname01  | Fname01   | 98777777 | Bills Test Group | 1/2/1980 | Male   | Subscriber           |       |
+-&gt; done: MemberSearchFacetsSteps.GivenMemberSearchParametersAre(System.Collection...) (0.0s)
+When I perform search using First Name and Last Name
+-&gt; done: MemberSearchFacetsSteps.WhenIPerformSearchUsingFirstNameAndLastName() (3.2s)
+Then Facets Search results are returned and entire row is validated
+-&gt; done: MemberSearchFacetsSteps.ThenSearchResultsAreReturnedAndValidated() (0.3s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6212826e-c6fb-4cc2-874a-03d948a037fe" testId="d6b478a3-0d16-324e-bff8-116cd50a2c09" testName="Facets_SearchForMemberBySubscriberIDAndSuffix" computerName="UN-S-DVAPP-368" duration="00:00:07.5524341" startTime="2014-06-19T10:22:36.1599249-04:00" endTime="2014-06-19T10:22:43.7068482-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6212826e-c6fb-4cc2-874a-03d948a037fe">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (1.0s)
+And Facets Single Member Management Page Opened
+-&gt; done: MemberSearchFacetsSteps.GivenSingleMemberManagementPageOpened() (3.0s)
+Given Facets Member Search parameters are
+  --- table step argument ---
+  | GroupID  | SubscriberID | Suffix | LastName | FirstName | SSN      | GroupName        | DOB      | Gender | RelationToSubscriber | HIPAA |
+  | BTTESTGP | BTVBB01      | 00     | Lname01  | Fname01   | 98777777 | Bills Test Group | 1/2/1980 | Male   | Subscriber           |       |
+-&gt; done: MemberSearchFacetsSteps.GivenMemberSearchParametersAre(System.Collection...) (0.0s)
+When I perform search using subscriberID and suffix
+-&gt; done: MemberSearchFacetsSteps.WhenIPerformSearchUsingSubscriberIDAndSuffix() (3.2s)
+Then Facets Search results are returned and entire row is validated
+-&gt; done: MemberSearchFacetsSteps.ThenSearchResultsAreReturnedAndValidated() (0.3s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2302685f-4fe2-4571-ace0-990ddb56805a" testId="a8422368-38c3-8393-95c9-05ba1e77ebdf" testName="Facets_SearchForMemberBySubscriberIDOnly" computerName="UN-S-DVAPP-368" duration="00:00:06.9165338" startTime="2014-06-19T10:22:43.7224733-04:00" endTime="2014-06-19T10:22:50.6443926-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2302685f-4fe2-4571-ace0-990ddb56805a">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (1.0s)
+And Facets Single Member Management Page Opened
+-&gt; done: MemberSearchFacetsSteps.GivenSingleMemberManagementPageOpened() (2.8s)
+Given Facets Member Search parameters are
+  --- table step argument ---
+  | GroupID  | SubscriberID | Suffix | LastName | FirstName | SSN      | GroupName        | DOB      | Gender | RelationToSubscriber | HIPAA |
+  | BTTESTGP | BTVBB01      | 00     | Lname01  | Fname01   | 98777777 | Bills Test Group | 1/2/1980 | Male   | Subscriber           |       |
+-&gt; done: MemberSearchFacetsSteps.GivenMemberSearchParametersAre(System.Collection...) (0.0s)
+When I perform search using subscriberID only
+-&gt; done: MemberSearchFacetsSteps.WhenIPerformSearchUsingSubscriberIDOnly() (2.8s)
+Then Facets Search results are returned and entire row is validated
+-&gt; done: MemberSearchFacetsSteps.ThenSearchResultsAreReturnedAndValidated() (0.3s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ff375672-bd0c-4c03-8d4c-ab5e5e565f5c" testId="5ffab15e-8b95-0096-3765-9b43502157a0" testName="QNXT_SearchForDependentMemberByHealthPlanID" computerName="UN-S-DVAPP-368" duration="00:01:14.2707955" startTime="2014-06-19T10:22:50.6443926-04:00" endTime="2014-06-19T10:24:05.9593278-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff375672-bd0c-4c03-8d4c-ab5e5e565f5c">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on QNXT environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnQnxt("Joe.Super") (38.6s)
+And QNXT Single Member Management Page Opened
+-&gt; done: MemberSearchQNXTSteps.GivenSingleMemberManagementPageOpened() (2.7s)
+Given QNXT Member Search parameters are
+  --- table step argument ---
+  | HealthPlanID      | LastName | FirstName | SSN       | MemberID        | DOB      | Gender | HIPAA |
+  | 00099000003871703 | Beauford | Jacob     | 319851245 | ZZQA00000508274 | 3/1/2014 | Male   |       |
+-&gt; done: MemberSearchQNXTSteps.GivenMemberSearchParametersAre(&lt;table&gt;) (0.0s)
+When I perform QNXT search using HealthPlanID only
+-&gt; done: MemberSearchQNXTSteps.WhenIPerformSearchUsingHealthPlanIDOnly() (28.0s)
+Then QNXT Search results are returned and entire row is validated
+-&gt; done: MemberSearchQNXTSteps.ThenSearchResultsAreReturnedAndValidated() (4.9s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="653fce6b-e506-478a-8d9c-96b8c8b4bd98" testId="aa3c5988-1e92-bd8e-d925-c0e63c00cf30" testName="QNXT_SearchForFamilyMembersByPartialHealthPlanID" computerName="UN-S-DVAPP-368" duration="00:00:35.9732097" startTime="2014-06-19T10:24:05.9749529-04:00" endTime="2014-06-19T10:24:41.9439331-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="653fce6b-e506-478a-8d9c-96b8c8b4bd98">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on QNXT environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnQnxt("Joe.Super") (1.4s)
+And QNXT Single Member Management Page Opened
+-&gt; done: MemberSearchQNXTSteps.GivenSingleMemberManagementPageOpened() (3.2s)
+Given QNXT Member Search parameters are
+  --- table step argument ---
+  | HealthPlanID     | LastName | FirstName | SSN       | MemberID        | DOB       | Gender | HIPAA |
+  | 0009900000387170 | Beauford | Thomas    | 319787414 | ZZQA00000508271 | 4/12/1984 | Male   |       |
+-&gt; done: MemberSearchQNXTSteps.GivenMemberSearchParametersAre(&lt;table&gt;) (0.0s)
+When I perform QNXT search using partial HealthPlanID
+-&gt; done: MemberSearchQNXTSteps.WhenIPerformQNXTSearchUsingPartialHealthPlanID() (6.3s)
+And QNXT Member Search results are
+  --- table step argument ---
+  | HealthPlanID      | LastName | FirstName | SSN       | MemberID        | DOB       | Gender | HIPAA |
+  | 00099000003871700 | Beauford | Thomas    | 319787414 | ZZQA00000508271 | 4/12/1984 | Male   |       |
+  | 00099000003871701 | Beauford | Theresa   | 319852121 | ZZQA00000508272 | 11/2/1983 | Female |       |
+  | 00099000003871702 | Beauford | Jordan    | 319651232 | ZZQA00000508273 | 3/1/2014  | Male   |       |
+  | 00099000003871703 | Beauford | Jacob     | 319851245 | ZZQA00000508274 | 3/1/2014  | Male   |       |
+-&gt; done: MemberSearchQNXTSteps.GivenMemberSearchResultsAre(&lt;table&gt;) (0.0s)
+Then QNXT Search results are returned and all rows are validated
+-&gt; done: MemberSearchQNXTSteps.ThenQNXTSearchResultsAreReturnedAndAllRowsAreValidated() (25.1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d7793bf6-76b1-4452-9009-835124d7e168" testId="c7e72321-97a3-961a-4051-3c86b65c1abd" testName="QNXT_SearchForMemberByAllValues" computerName="UN-S-DVAPP-368" duration="00:00:14.5645725" startTime="2014-06-19T10:24:41.9439331-04:00" endTime="2014-06-19T10:24:56.5221514-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d7793bf6-76b1-4452-9009-835124d7e168">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on QNXT environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnQnxt("Joe.Super") (1.4s)
+And QNXT Single Member Management Page Opened
+-&gt; done: MemberSearchQNXTSteps.GivenSingleMemberManagementPageOpened() (3.2s)
+Given QNXT Member Search parameters are
+  --- table step argument ---
+  | HealthPlanID | LastName | FirstName | SSN       | MemberID        | DOB       | Gender | HIPAA |
+  | 788888888    | Mohler   | Noah      | 788888888 | ZZQA00000484180 | 3/25/1981 | Male   |       |
+-&gt; done: MemberSearchQNXTSteps.GivenMemberSearchParametersAre(&lt;table&gt;) (0.0s)
+When I perform QNXT search using all values
+-&gt; done: MemberSearchQNXTSteps.WhenIPerformSearchUsingAllValues() (4.8s)
+Then QNXT Search results are returned and entire row is validated
+-&gt; done: MemberSearchQNXTSteps.ThenSearchResultsAreReturnedAndValidated() (5.1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4bfeba4f-8d14-4bc3-bb80-fb2d184dda94" testId="5955de4d-ab98-a39f-a85b-8548148d8b76" testName="QNXT_SearchForMemberByFirstNameAndLastName" computerName="UN-S-DVAPP-368" duration="00:00:14.0104071" startTime="2014-06-19T10:24:56.5221514-04:00" endTime="2014-06-19T10:25:10.5378661-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4bfeba4f-8d14-4bc3-bb80-fb2d184dda94">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on QNXT environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnQnxt("Joe.Super") (1.4s)
+And QNXT Single Member Management Page Opened
+-&gt; done: MemberSearchQNXTSteps.GivenSingleMemberManagementPageOpened() (3.3s)
+Given QNXT Member Search parameters are
+  --- table step argument ---
+  | HealthPlanID | LastName | FirstName | SSN       | MemberID        | DOB       | Gender | HIPAA |
+  | 788888888    | Mohler   | Noah      | 788888888 | ZZQA00000484180 | 3/25/1981 | Male   |       |
+-&gt; done: MemberSearchQNXTSteps.GivenMemberSearchParametersAre(&lt;table&gt;) (0.0s)
+When I perform QNXT search using First Name and Last Name
+-&gt; done: MemberSearchQNXTSteps.WhenIPerformSearchUsingFirstNameAndLastName() (4.1s)
+Then QNXT Search results are returned and entire row is validated
+-&gt; done: MemberSearchQNXTSteps.ThenSearchResultsAreReturnedAndValidated() (5.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2d358c6c-23cf-43e3-b559-b22879c1f9f9" testId="860f3ab9-bd91-7e64-1b4b-1e1a4ee2dfef" testName="QNXT_SearchForMemberByHealthPlanIDOnly" computerName="UN-S-DVAPP-368" duration="00:00:13.8021770" startTime="2014-06-19T10:25:10.5378661-04:00" endTime="2014-06-19T10:25:24.3504545-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d358c6c-23cf-43e3-b559-b22879c1f9f9">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on QNXT environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnQnxt("Joe.Super") (1.4s)
+And QNXT Single Member Management Page Opened
+-&gt; done: MemberSearchQNXTSteps.GivenSingleMemberManagementPageOpened() (3.2s)
+Given QNXT Member Search parameters are
+  --- table step argument ---
+  | HealthPlanID | LastName | FirstName | SSN       | MemberID        | DOB       | Gender | HIPAA |
+  | 788888888    | Mohler   | Noah      | 788888888 | ZZQA00000484180 | 3/25/1981 | Male   |       |
+-&gt; done: MemberSearchQNXTSteps.GivenMemberSearchParametersAre(&lt;table&gt;) (0.0s)
+And The search instructions are correct
+-&gt; done: MemberSearchQNXTSteps.GivenTheSearchInstructionsAreCorrect() (1.4s)
+And The Health Plan ID field has the correct label
+-&gt; done: MemberSearchQNXTSteps.GivenTheHealthPlanIDFieldHasTheCorrectLabel() (0.1s)
+When I perform QNXT search using HealthPlanID only
+-&gt; done: MemberSearchQNXTSteps.WhenIPerformSearchUsingHealthPlanIDOnly() (2.5s)
+Then QNXT Search results are returned and entire row is validated
+-&gt; done: MemberSearchQNXTSteps.ThenSearchResultsAreReturnedAndValidated() (5.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f7d23f0d-f618-49fd-afa3-5732e59fece4" testId="f39c9f8e-28c1-51e8-4693-2cc3be6e67f1" testName="CreateVendor" computerName="UN-S-DVAPP-368" duration="00:00:23.9693625" startTime="2014-06-19T10:25:24.3504545-04:00" endTime="2014-06-19T10:25:49.3681928-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7d23f0d-f618-49fd-afa3-5732e59fece4">
+      <Output>
+        <StdOut>Given I am logged in to PayerUI as "Joe.Super" on Facets environment
+-&gt; done: ApplicationSetup.StartPayerUiApplicationOnFacets("Joe.Super") (4.6s)
+And Vendors Page Opened
+-&gt; done: VendorCreationSteps.GivenVendorsPageOpened() (2.9s)
+And The Vendor with Name "AUTO Vendor 1" does not exist, delete if exist
+-&gt; done: VendorCreationSteps.GivenTheVendorWithNameDoesNotExistDeleteIfExist("AUTO Vendor 1") (3.2s)
+Given Vendor Creation Wizard Opened
+-&gt; done: VendorCreationSteps.GivenVendorCreationWizardOpened() (0.7s)
+And Vendor Name is "AUTO Vendor 1"
+-&gt; done: VendorCreationSteps.GivenVendorNameIs("AUTO Vendor 1") (0.0s)
+And Vendor User Defined is "Some ID"
+-&gt; done: VendorCreationSteps.VendorUserDefinedIs("Some ID") (0.0s)
+And Vendor Contacts are
+  --- table step argument ---
+  | First Name | Last Name | Phone        | Email            |
+  | Alex       | Brut      | 555-555-5555 | alex@email.com   |
+  | Gordon     | Gates     | 555-555-5555 | gordon@email.com |
+-&gt; done: VendorCreationSteps.GivenVendorContactsAre(&lt;table&gt;) (0.0s)
+And Vendor Programs are
+  --- table step argument ---
+  | Program Type         | Name              | Description                  |
+  | Education, Diabetes  | Diabetes Program  | Diabetes Program Descrition  |
+  | Education, Nutrition | Nutrition Program | Nutrition Program Descrition |
+-&gt; done: VendorCreationSteps.GivenVendorProgramsAre(&lt;table&gt;) (0.0s)
+When I Create Vendor
+-&gt; done: VendorCreationSteps.WhenICreateVendor() (11.5s)
+Then Vendor Shoould Be Created
+-&gt; done: VendorCreationSteps.ThenVendorShoouldBeCreated() (0.9s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
