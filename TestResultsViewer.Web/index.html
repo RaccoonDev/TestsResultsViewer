@@ -1,14 +1,32 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" data-ng-app="testResultsViewerApp">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Test Results Viewer</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/app/app.js"></script>
+    <script src="Scripts/app/controllers.js"></script>
+    <script src="Scripts/app/services.js"></script>
 </head>
 <body>
-    <form method="POST" action="api/TestResultFiles" enctype="multipart/form-data">
-        <input type="file" name="resultsFile" />
-        <input type="submit" value="upload" />
-    </form>
+    <div class="container" data-ng-controller="testResultsController">
+        <div class="row">
+            <h1 class="page-header">Tests</h1>
+            <div class="row">
+                Outcome - {{testRun.ResultSummary.Outcome}}<br />
+                Start - {{testRun.Times.Start}}<br />
+                Finish - {{testRun.Times.Finish}}<br />
+                <div data-ng-repeat="test in testRun.UnitTestResults" style="margin-left: 20px;">
+                    <div>{{test.TestName}} - {{test.Outcome}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
