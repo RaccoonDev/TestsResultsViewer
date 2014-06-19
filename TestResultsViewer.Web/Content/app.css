@@ -1,1 +1,47 @@
-﻿
+﻿body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+
+.testResult {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.testResult .showButton {
+    float: right;
+}
+
+.testResult .statistics  {
+    font-weight: bold;
+}
+
+.testResults td.green {
+    color: green;
+}
+
+.testResults td.red {
+    color: red;
+}
+
+.testResults td.purple {
+    color: purple;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.purple {
+    color: purple;
+}
+
+.yellow {
+    color: yellow;
+}

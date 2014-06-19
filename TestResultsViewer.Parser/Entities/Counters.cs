@@ -5,6 +5,7 @@ namespace TestResultsViewer.Parser.Entities
         public int Total { get; set; }
         public int Executed { get; set; }
         public int Passed { get; set; }
+        public int Failed { get; set; }
         public int Error { get; set; }
         public int Timeout { get; set; }
         public int Aborted { get; set; }

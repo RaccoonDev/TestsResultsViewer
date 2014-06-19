@@ -91,6 +91,7 @@ namespace TestResultsViewer.Parser
                 Total = testRunCounters.total,
                 Executed = testRunCounters.executed,
                 Passed = testRunCounters.passed,
+                Failed = testRunCounters.failed,
                 Error = testRunCounters.error,
                 Timeout = testRunCounters.timeout,
                 Aborted = testRunCounters.aborted,
