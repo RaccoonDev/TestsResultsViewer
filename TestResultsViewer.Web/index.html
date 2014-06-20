@@ -21,8 +21,8 @@
             <div class="testResult">
                 <div class="runStatistics">
                     <h3 data-ng-class="getColorClass(testInstance.data.ResultSummary.Outcome)">Outcome - {{testInstance.data.ResultSummary.Outcome}}</h3>
-                    <p>Start - {{testInstance.data.Times.Start}}</p>
-                    <p>Finish - {{testInstance.data.Times.Finish}}</p>
+                    <p>Start - {{testInstance.data.Times.Start | date: 'short'}}</p>
+                    <p>Finish - {{testInstance.data.Times.Finish | date: 'short'}}</p>
                     <p class="statistics">
                         Total Tests - <span>{{testInstance.data.ResultSummary.Counters.Total}}</span> |
                         Total Executed - <span>{{testInstance.data.ResultSummary.Counters.Executed}}</span> |
