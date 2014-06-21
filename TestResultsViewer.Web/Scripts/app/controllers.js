@@ -4,16 +4,11 @@ var testResultsViewerControllers = angular.module('testResultsViewerControllers'
 
 testResultsViewerControllers.controller('testResultsController', ['$scope', 'testRunsService',
     function ($scope, testRuns) {
-        $scope.testInstance = { testsResultsVisible : false };
-        $scope.testInstance.data = testRuns.get();
-
-        $scope.triggerDetails = function () {
-            $scope.testInstance.testsResultsVisible = !$scope.testInstance.testsResultsVisible;
-        }
+        $scope.testInstances = testRuns.get();
 
         $scope.getColorClass = function (outcome) {
             return {
-                'green': outcome == 'Passed' || outcome == 'Pass',
+                'green': outcome == 'Passed' || outcome == 'Pass' || outcome == 'Completed',
                 'red': outcome == 'Failed',
                 'purple': outcome == 'Inconclusive'
             };
@@ -34,4 +29,11 @@ testResultsViewerControllers.controller('testResultsController', ['$scope', 'tes
                 ? str.substring(0, limit) + '...'
                 : str;
         };
+
+        $scope.filterDetails = function (testInstance, filterValue) {
+            testInstance.testsResultsVisible = true;
+            testInstance.detailsFilter = { Outcome: filterValue };
+        };
+
+        $scope.predicate = '-Times.Start';
     }]);

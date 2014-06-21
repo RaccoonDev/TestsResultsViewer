@@ -11,6 +11,11 @@
     margin: 20px;
 }
 
+.detailsFilter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .testResult .showButton {
     float: right;
 }

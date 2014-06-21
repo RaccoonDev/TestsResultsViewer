@@ -12,5 +12,11 @@ namespace TestResultsViewer.Tests
             var serializer = new XmlSerializer(typeof(TestRunType));
             Assert.IsNotNull(serializer);
         }
+
+        [TestMethod]
+        public void SomeAnotherTestToPass()
+        {
+            
+        }
     }
 }
