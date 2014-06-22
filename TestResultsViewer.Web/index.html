@@ -21,7 +21,7 @@
             <input type="button" value="New On Top" data-ng-click="predicate='-Times.Start'" />
             <input type="button" value="Old On top" data-ng-click="predicate='Times.Start'" />
             <div class="testResult" data-ng-repeat="run in testInstances.TestRuns | orderBy:predicate:reverse">
-                <div class="runStatistics">
+                <div>
                     <h3 data-ng-class="getColorClass(run.ResultSummary.Outcome)">Outcome - {{run.ResultSummary.Outcome}}</h3>
                     <p>Start - {{run.Times.Start | date: 'short'}}</p>
                     <p>Finish - {{run.Times.Finish | date: 'short'}}</p>
@@ -48,7 +48,7 @@
                     </p>
                 </div>
                 <div data-ng-show="testInstance.testsResultsVisible">
-                    <table class="table table-condensed table-striped table-bordered table-hover testDetails">
+                    <table class="table table-condensed table-striped table-bordered table-hover">
                         <thead>
                             <tr>
                                 <th class="col-md-2">Result</th>
