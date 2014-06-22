@@ -47,5 +47,10 @@ namespace TestResultsViewer.Parser
                 }
             }
         }
+
+        public FileStream GetOriginalContentById(Guid id)
+        {
+            return new FileStream(Path.Combine(_outputDirectory, string.Format("{0}.trx", id)), FileMode.Open);
+        }
     }
 }

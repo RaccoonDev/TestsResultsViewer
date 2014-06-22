@@ -1,7 +1,9 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
@@ -53,6 +55,20 @@ namespace TestResultsViewer.Web.Controllers
                         TestRuns = _resultsStorage.GetAllRuns().ToList()
                     }
             ));
+        }
+
+        [HttpGet]
+        public HttpResponseMessage Get(Guid id)
+        {
+            var fileStream = _resultsStorage.GetOriginalContentById(id);
+            var response = Request.CreateResponse(HttpStatusCode.OK);
+            response.Content = new StreamContent(fileStream);
+            response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+            response.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment")
+            {
+                FileName = string.Format("{0}.trx", id)
+            };
+            return response;
         }
     }
 }

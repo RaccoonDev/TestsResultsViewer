@@ -20,9 +20,10 @@
             <h1 class="page-header">Tests</h1>
             <input type="button" value="New On Top" data-ng-click="predicate='-Times.Start'" />
             <input type="button" value="Old On top" data-ng-click="predicate='Times.Start'" />
-            <div class="testResult" data-ng-repeat="run in testInstances.TestRuns | orderBy:predicate:reverse">
+            Name Filter: <input type="text" data-ng-model="runSearch.Name" />
+            <div class="testResult" data-ng-repeat="run in testInstances.TestRuns | filter:runSearch | orderBy:predicate:reverse">
                 <div>
-                    <h3>{{run.Name}}</h3>
+                    <h3>{{run.Name}}</h3><a data-ng-href="api/testResultFiles/{{run.Id}}">Download original file</a>
                     <h4 data-ng-class="getColorClass(run.ResultSummary.Outcome)">{{run.ResultSummary.Outcome}}</h4>
                     <p>Start - {{run.Times.Start | date: 'short'}}</p>
                     <p>Finish - {{run.Times.Finish | date: 'short'}}</p>

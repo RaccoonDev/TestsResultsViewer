@@ -4,12 +4,6 @@
     }
 }
 
-@media (min-width: 1820px) {
-    .container {
-        width: 1810px;
-    }
-}
-
 body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     overflow-y: scroll;
