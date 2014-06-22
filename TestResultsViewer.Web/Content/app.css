@@ -1,4 +1,10 @@
-﻿body {
+﻿@media (min-width: 1900px) {
+    .container {
+        width: 1810px;
+    }
+}
+
+body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     overflow-y: scroll;
 }
@@ -50,4 +56,8 @@
 
 .yellow {
     color: yellow;
+}
+
+.testsDetails tbody tr:hover {
+    cursor: pointer;
 }

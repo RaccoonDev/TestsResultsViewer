@@ -10,14 +10,15 @@ namespace TestResultsViewer.Parser
         public TestRun Parse(StreamReader streamReader)
         {
             var serializer = new XmlSerializer(typeof(TestRunType));
-            var testRunType = (TestRunType)serializer.Deserialize(streamReader);
+            var deserializedTestRun = (TestRunType)serializer.Deserialize(streamReader);
 
             var result = new TestRun
             {
-                Id = Guid.Parse(testRunType.id),
-                Times = testRunType.Items.GetByType<TestRunTypeTimes>().ToTimes(),
-                ResultSummary = testRunType.Items.GetByType<TestRunTypeResultSummary>().ToResultSummary(),
-                UnitTestResults = testRunType.GetUnitTestResults()
+                Id = Guid.Parse(deserializedTestRun.id),
+                Name = deserializedTestRun.name,
+                Times = deserializedTestRun.Items.GetByType<TestRunTypeTimes>().ToTimes(),
+                ResultSummary = deserializedTestRun.Items.GetByType<TestRunTypeResultSummary>().ToResultSummary(),
+                UnitTestResults = deserializedTestRun.GetUnitTestResults()
             };
 
             return result;

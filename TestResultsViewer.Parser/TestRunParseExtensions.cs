@@ -7,7 +7,7 @@ namespace TestResultsViewer.Parser
 {
     public static class TestRunParseExtensions
     {
-        public static T GetByType<T>(this object[] items)
+        public static T GetByType<T>(this IEnumerable<object> items)
         {
             if (items == null) return default(T);
             return ((T)items.Single(i => i.GetType() == typeof(T)));
