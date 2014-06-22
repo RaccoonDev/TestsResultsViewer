@@ -28,22 +28,22 @@
                     <p>Start - {{run.Times.Start | date: 'short'}}</p>
                     <p>Finish - {{run.Times.Finish | date: 'short'}}</p>
                     <p class="statistics">
-                        <span class="detailsFilter" data-ng-click="filterDetails(testInstance, '')">
+                        <span class="detailsFilter" data-ng-click="testInstance.testsResultsVisible = true; filterDetails(testInstance, '')">
                             Total Tests - <span>{{run.ResultSummary.Counters.Total}}</span>
                         </span> |
                         <span>
                             Total Executed - <span>{{run.ResultSummary.Counters.Executed}}</span>
                         </span> |
-                        <span class="detailsFilter" data-ng-click="filterDetails(testInstance, 'Passed')">
+                        <span class="detailsFilter" data-ng-click="testInstance.testsResultsVisible = true; filterDetails(testInstance, 'Passed')">
                             Passed - <span class="green">{{run.ResultSummary.Counters.Passed}}</span>
                         </span> |
-                        <span class="detailsFilter" data-ng-click="filterDetails(testInstance, 'Failed')">
+                        <span class="detailsFilter" data-ng-click="testInstance.testsResultsVisible = true; filterDetails(testInstance, 'Failed')">
                             Failed - <span class="red">{{run.ResultSummary.Counters.Failed}}</span>
                         </span> |
-                        <span class="detailsFilter" data-ng-click="filterDetails(testInstance, 'Inconclusive')">
+                        <span class="detailsFilter" data-ng-click="testInstance.testsResultsVisible = true; filterDetails(testInstance, 'Inconclusive')">
                             Inconclusive - <span class="purple">{{run.ResultSummary.Counters.Inconclusive}}</span>
                         </span> |
-                        <span class="detailsFilter" data-ng-click="filterDetails(testInstance, 'NotRunnable')">
+                        <span class="detailsFilter" data-ng-click="testInstance.testsResultsVisible = true; filterDetails(testInstance, 'NotRunnable')">
                             Not runnable - <span class="red">{{run.ResultSummary.Counters.NotRunnable}}</span>
                         </span>
                         <input class="showButton" type="button" value="Show/Hide Test Results" data-ng-click="testInstance.testsResultsVisible = !testInstance.testsResultsVisible">

@@ -31,7 +31,6 @@ testResultsViewerControllers.controller('testResultsController', ['$scope', 'tes
         };
 
         $scope.filterDetails = function (testInstance, filterValue) {
-            testInstance.testsResultsVisible = true;
             testInstance.detailsFilter = { Outcome: filterValue };
         };
 
