@@ -17,7 +17,7 @@ testResultsViewerControllers.controller('testResultsController', ['$scope', 'tes
         $scope.getRowColorClass = function (outcome) {
             return {
                 'success': outcome == 'Passed' || outcome == 'Pass',
-                'error': outcome == 'Failed',
+                'danger': outcome == 'Failed',
                 'warning': outcome == 'Inconclusive'
             };
         };

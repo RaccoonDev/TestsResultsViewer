@@ -1,4 +1,10 @@
-﻿@media (min-width: 1900px) {
+﻿@media (min-width: 1520px) {
+    .container {
+        width: 1510px;
+    }
+}
+
+@media (min-width: 1820px) {
     .container {
         width: 1810px;
     }
@@ -60,4 +66,12 @@ body {
 
 .testsDetails tbody tr:hover {
     cursor: pointer;
+}
+
+.testsDetails tbody tr.detailsRow:hover {
+    cursor: default;
+}
+
+.table-hover > tbody > tr:hover > td {
+    background-color: white;
 }

@@ -63,7 +63,7 @@
                                 <td>{{test.TestName}}</td>
                                 <td>{{trimString(test.Output.ErrorInfo.Message)}}</td>
                             </tr>
-                            <tr data-ng-show="test.selectedRow && (test.Output.StdOut != null || test.Output.ErrorInfo.Message != null || test.Output.ErrorInfo.StackTrace != null)">
+                            <tr class="detailsRow" data-ng-show="test.selectedRow && (test.Output.StdOut != null || test.Output.ErrorInfo.Message != null || test.Output.ErrorInfo.StackTrace != null)">
                                 <td colspan="3">
                                     <div data-ng-show="test.Output.StdOut != null">
                                         <h4>Output</h4>
