@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <title>Test Results Viewer</title>
+    
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/app.css" rel="stylesheet" />
 
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Content/app.css" rel="stylesheet" />
-
-    <script src="Scripts/angular.js"></script>
-    <script src="Scripts/angular-resource.js"></script>
-    <script src="Scripts/app/app.js"></script>
-    <script src="Scripts/app/controllers.js"></script>
-    <script src="Scripts/app/services.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-resource.js"></script>
+    <script src="~/Scripts/app/app.js"></script>
+    <script src="~/Scripts/app/controllers.js"></script>
+    <script src="~/Scripts/app/services.js"></script>
 </head>
 <body>
     <div class="container" data-ng-controller="testResultsController">
@@ -23,7 +23,7 @@
             Name Filter: <input type="text" data-ng-model="runSearch.Name" />
             <div class="testResult" data-ng-repeat="run in testInstances.TestRuns | filter:runSearch | orderBy:predicate:reverse">
                 <div>
-                    <h3>{{run.Name}}</h3><a data-ng-href="api/testResultFiles/{{run.Id}}">Download original file</a>
+                    <h3>{{run.Name}}</h3><a data-ng-href="/ResultsViewer/api/testResultFiles/{{run.Id}}">Download original file</a>
                     <h4 data-ng-class="getColorClass(run.ResultSummary.Outcome)">{{run.ResultSummary.Outcome}}</h4>
                     <p>Start - {{run.Times.Start | date: 'short'}}</p>
                     <p>Finish - {{run.Times.Finish | date: 'short'}}</p>

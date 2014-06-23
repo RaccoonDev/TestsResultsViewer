@@ -4,5 +4,5 @@ var testResultsViewerServices = angular.module('testResultsViewerServices', ['ng
 
 testResultsViewerServices.factory('testRunsService', ['$resource',
     function ($resource) {
-        return $resource('api/testResultFiles');
+        return $resource('/ResultsViewer/api/testResultFiles');
     }]);
