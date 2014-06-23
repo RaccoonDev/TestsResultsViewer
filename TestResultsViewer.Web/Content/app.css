@@ -14,7 +14,7 @@ body {
     font-size: 12px;
     text-align: left;
     border-collapse: collapse;
-    margin: 20px;
+    margin: 40px 0;
 }
 
 .detailsFilter:hover{
@@ -68,4 +68,9 @@ body {
 
 .table-hover > tbody > tr:hover > td {
     background-color: white;
+}
+
+.timeLabelBox {
+    width:60px;
+    display:inline-block;
 }

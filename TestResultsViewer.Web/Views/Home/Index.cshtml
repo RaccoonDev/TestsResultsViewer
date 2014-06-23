@@ -17,16 +17,17 @@
 <body>
     <div class="container" data-ng-controller="testResultsController">
         <div>
-            <h1 class="page-header">Tests</h1>
+            <h1 class="page-header">Test Results Viewer</h1>
             <input type="button" value="New On Top" data-ng-click="predicate='-Times.Start'" />
             <input type="button" value="Old On top" data-ng-click="predicate='Times.Start'" />
             Name Filter: <input type="text" data-ng-model="runSearch.Name" />
             <div class="testResult" data-ng-repeat="run in testInstances.TestRuns | filter:runSearch | orderBy:predicate:reverse">
                 <div>
-                    <h3>{{run.Name}}</h3><a data-ng-href="/ResultsViewer/api/testResultFiles/{{run.Id}}">Download original file</a>
+                    <h3>{{run.Name}}</h3>
+                    <a data-ng-href="api/testResultFiles/{{run.Id}}">Download original file</a>
                     <h4 data-ng-class="getColorClass(run.ResultSummary.Outcome)">{{run.ResultSummary.Outcome}}</h4>
-                    <p>Start - {{run.Times.Start | date: 'short'}}</p>
-                    <p>Finish - {{run.Times.Finish | date: 'short'}}</p>
+                    <p><span class="timeLabelBox">Start</span>{{run.Times.Start | date: 'medium'}} </p>
+                    <p><span class="timeLabelBox">Finish</span>{{run.Times.Finish | date: 'medium'}}</p>
                     <p class="statistics">
                         <span class="detailsFilter" data-ng-click="testInstance.testsResultsVisible = true; filterDetails(testInstance, '')">
                             Total Tests - <span>{{run.ResultSummary.Counters.Total}}</span>
