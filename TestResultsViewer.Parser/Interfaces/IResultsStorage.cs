@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using TestResultsViewer.Parser.Entities;
 
@@ -9,6 +8,6 @@ namespace TestResultsViewer.Parser.Interfaces
     {
         void Store(Stream inputStream);
         IEnumerable<TestRun> GetAllRuns();
-        FileStream GetOriginalContentById(Guid id);
+        FileStream GetOriginalContentById(string filename);
     }
 }

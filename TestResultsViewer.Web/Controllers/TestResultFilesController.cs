@@ -58,15 +58,15 @@ namespace TestResultsViewer.Web.Controllers
         }
 
         [HttpGet]
-        public HttpResponseMessage Get(Guid id)
+        public HttpResponseMessage Get(string filename)
         {
-            var fileStream = _resultsStorage.GetOriginalContentById(id);
+            var fileStream = _resultsStorage.GetOriginalContentById(filename);
             var response = Request.CreateResponse(HttpStatusCode.OK);
             response.Content = new StreamContent(fileStream);
             response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
             response.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment")
             {
-                FileName = string.Format("{0}.trx", id)
+                FileName = filename
             };
             return response;
         }

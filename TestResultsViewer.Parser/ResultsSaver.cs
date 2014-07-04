@@ -43,14 +43,16 @@ namespace TestResultsViewer.Parser
                 using (var fileStream = new StreamReader(file))
                 {
                     var parser = new ResultsParser();
-                    yield return parser.Parse(fileStream);
+                    var testRun = parser.Parse(fileStream);
+                    testRun.FileName = Path.GetFileName(file);
+                    yield return testRun;
                 }
             }
         }
 
-        public FileStream GetOriginalContentById(Guid id)
+        public FileStream GetOriginalContentById(string filename)
         {
-            return new FileStream(Path.Combine(_outputDirectory, string.Format("{0}.trx", id)), FileMode.Open);
+            return new FileStream(Path.Combine(_outputDirectory, filename), FileMode.Open);
         }
     }
 }
