@@ -14,6 +14,12 @@ namespace TestResultsViewer.Web
             ConfigureResolver(config);
 
             config.Routes.MapHttpRoute(
+                name: "TestResultFiles",
+                routeTemplate: "api/{controller}/{filename}",
+                defaults: new { filename = RouteParameter.Optional}
+            );
+
+            config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
