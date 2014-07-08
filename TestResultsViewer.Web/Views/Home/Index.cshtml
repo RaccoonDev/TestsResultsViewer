@@ -28,6 +28,10 @@
                     <input type="text" id="nameSearch" class="form-control" data-ng-model="runSearch.Name" placeholder="Name" />
                 </div>
             </form>
+            <div class="row" data-ng-show="!testInstances.TestRuns.length">
+                <h3 class="col-md-offset-1">No tests results found...</h3>
+                <p class="col-md-offset-1">try reload later</p>
+            </div>
             <div class="testResult" data-ng-repeat="run in testInstances.TestRuns | filter:runSearch | orderBy:predicate:reverse">
                 <div>
                     <h3>{{run.Name}}</h3>
