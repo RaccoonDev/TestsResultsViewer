@@ -4,7 +4,10 @@ var testResultsViewerControllers = angular.module('testResultsViewerControllers'
 
 testResultsViewerControllers.controller('testResultsController', ['$scope', 'testRunsService',
     function ($scope, testRuns) {
-        $scope.testInstances = testRuns.get();
+        $scope.loading = true;
+        $scope.testInstances = testRuns.get(
+            function () { $scope.loading = false; },
+            function() { $scope.loading = false; $scope.error = true; });
 
         $scope.getColorClass = function (outcome) {
             return {

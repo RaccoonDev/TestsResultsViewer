@@ -28,9 +28,14 @@
                     <input type="text" id="nameSearch" class="form-control" data-ng-model="runSearch.Name" placeholder="Name" />
                 </div>
             </form>
-            <div class="row" data-ng-show="!testInstances.TestRuns.length">
-                <h3 class="col-md-offset-1">No tests results found...</h3>
-                <p class="col-md-offset-1">try reload later</p>
+            <div class="row" data-ng-show="loading">
+                <h3 class="col-md-offset-1">Loading test results...</h3>
+            </div>
+            <div class="row" data-ng-show="error">
+                <h3 class="col-md-offset-1">Something wrong happened getting test results...</h3>
+            </div>
+            <div class="row" data-ng-show="!loading && !testInstances.TestRuns.length">
+                <h3 class="col-md-offset-1">There are no available test results...</h3>
             </div>
             <div class="testResult" data-ng-repeat="run in testInstances.TestRuns | filter:runSearch | orderBy:predicate:reverse">
                 <div>
