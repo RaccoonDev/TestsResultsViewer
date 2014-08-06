@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using TestResultsViewer.Parser;
 using TestResultsViewer.Parser.Entities;
 using TestResultsViewer.Parser.Interfaces;
 
-namespace TestResultsViewer.Parser
+namespace TestResultsViewer.Web.Storages
 {
     public class FileSystemResultsStorage : IResultsStorage
     {
@@ -18,12 +19,12 @@ namespace TestResultsViewer.Parser
             _outputDirectory = outputDirectory;
         }
 
-        public void Store(Stream inputStream)
+        public void Store(Stream inputStream, string buildName = "")
         {
             using (var fileStream = new StreamReader(inputStream))
             {
                 var parser = new ResultsParser();
-                TestRun testRun = parser.Parse(fileStream);
+                TestRun testRun = parser.Parse(fileStream, buildName);
 
                 var newFilePath = Path.Combine(_outputDirectory, string.Format("{0}.trx", testRun.Id));
 
@@ -43,16 +44,25 @@ namespace TestResultsViewer.Parser
                 using (var fileStream = new StreamReader(file))
                 {
                     var parser = new ResultsParser();
-                    var testRun = parser.Parse(fileStream);
+                    var testRun = parser.Parse(fileStream, string.Empty);
                     testRun.FileName = Path.GetFileName(file);
                     yield return testRun;
                 }
             }
         }
 
-        public FileStream GetOriginalContentById(string filename)
+        public Stream GetOriginalContentById(string filename)
         {
             return new FileStream(Path.Combine(_outputDirectory, filename), FileMode.Open);
+        }
+
+        public void DeleteAll()
+        {
+            var directoryInfo = new DirectoryInfo(_outputDirectory);
+            foreach (var file in directoryInfo.GetFiles("*.trx"))
+            {
+                file.Delete();
+            }
         }
     }
 }

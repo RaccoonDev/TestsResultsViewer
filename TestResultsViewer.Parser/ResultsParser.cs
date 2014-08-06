@@ -7,7 +7,7 @@ namespace TestResultsViewer.Parser
 {
     public class ResultsParser
     {
-        public TestRun Parse(StreamReader streamReader)
+        public TestRun Parse(StreamReader streamReader, string buildName)
         {
             var serializer = new XmlSerializer(typeof(TestRunType));
             var deserializedTestRun = (TestRunType)serializer.Deserialize(streamReader);
@@ -18,7 +18,8 @@ namespace TestResultsViewer.Parser
                 Name = deserializedTestRun.name,
                 Times = deserializedTestRun.Items.GetByType<TestRunTypeTimes>().ToTimes(),
                 ResultSummary = deserializedTestRun.Items.GetByType<TestRunTypeResultSummary>().ToResultSummary(),
-                UnitTestResults = deserializedTestRun.GetUnitTestResults()
+                UnitTestResults = deserializedTestRun.GetUnitTestResults(),
+                BuildName = buildName
             };
 
             return result;

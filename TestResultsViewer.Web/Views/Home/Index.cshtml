@@ -19,13 +19,22 @@
         <div>
             <h1 class="page-header">Test Results Viewer</h1>
             <form class="row form-inline">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <input type="button" class="btn btn-default btn-sm" value="New On Top" data-ng-click="predicate='-Times.Start'" />
                     <input type="button" class="btn btn-default btn-sm" value="Old On top" data-ng-click="predicate='Times.Start'" />
                 </div>
-                <div class="col-md-4 form-group">
+                <div class="col-md-3 form-group">
                     <label for="nameSearch">Search:</label>
                     <input type="text" id="nameSearch" class="form-control" data-ng-model="runSearch.Name" placeholder="Name" />
+                </div>
+                <div class="col-md-3 form-group">
+                    <label for="buildType">Select build: </label>
+                    <select id="buildType" class="form-control" ng-model="runSearch.BuildName">
+                        <option value="" selected="selected">All</option>
+                        <option value="CI">CI</option>
+                        <option value="NI">NI</option>
+                        <option value="Automation">Automation</option>
+                    </select>
                 </div>
             </form>
             <div class="row" data-ng-show="loading">
@@ -40,7 +49,7 @@
             <div class="testResult" data-ng-repeat="run in testInstances.TestRuns | filter:runSearch | orderBy:predicate:reverse">
                 <div>
                     <h3>{{run.Name}}</h3>
-                    <a data-ng-href="api/testResultFiles/{{run.FileName}}">Download original file</a>
+                    <a data-ng-href="api/testResultFiles/{{run.Id}}.trx">Download original file</a>
                     <h4 data-ng-class="getColorClass(run.ResultSummary.Outcome)">{{run.ResultSummary.Outcome}}</h4>
                     <p><span class="timeLabelBox">Start</span>{{run.Times.Start | date: 'medium'}} </p>
                     <p><span class="timeLabelBox">Finish</span>{{run.Times.Finish | date: 'medium'}}</p>

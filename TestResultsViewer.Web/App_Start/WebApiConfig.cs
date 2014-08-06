@@ -4,6 +4,7 @@ using Microsoft.Practices.Unity;
 using TestResultsViewer.Parser;
 using TestResultsViewer.Parser.Interfaces;
 using TestResultsViewer.Web.Infrastructure;
+using MongoResultStorage = TestResultsViewer.Web.Storages.MongoResultStorage;
 
 namespace TestResultsViewer.Web
 {
@@ -29,9 +30,9 @@ namespace TestResultsViewer.Web
         private static void ConfigureResolver(HttpConfiguration config)
         {
             var container = new UnityContainer();
-            container.RegisterType<IResultsStorage, FileSystemResultsStorage>(new HierarchicalLifetimeManager(), 
+            container.RegisterType<IResultsStorage, MongoResultStorage>(new HierarchicalLifetimeManager(), 
                 new InjectionConstructor(ConfigurationManager.AppSettings["ResultFilesOutputDirectory"]));
-            config.DependencyResolver = new UnityResolver(container);;
+            config.DependencyResolver = new UnityResolver(container);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace TestResultsViewer.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<HttpResponseMessage> Post()
+        public async Task<HttpResponseMessage> Post(string buildName)
         {
             var httpContext = HttpContext.Current;
 
@@ -34,7 +34,7 @@ namespace TestResultsViewer.Web.Controllers
 
                 try
                 {
-                    _resultsStorage.Store(postedFile.InputStream);
+                    _resultsStorage.Store(postedFile.InputStream, buildName);
                 }
                 catch (Exception ex)
                 {
@@ -69,6 +69,11 @@ namespace TestResultsViewer.Web.Controllers
                 FileName = filename
             };
             return response;
+        }
+
+        public void Delete()
+        {
+            _resultsStorage.DeleteAll();
         }
     }
 }

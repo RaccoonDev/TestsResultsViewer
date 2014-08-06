@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Counters.cs" />
+    <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\ErrorInfo.cs" />
     <Compile Include="Entities\Output.cs" />
     <Compile Include="Entities\ResultSummary.cs" />
@@ -49,7 +50,6 @@
     <Compile Include="Interfaces\IResultsStorage.cs" />
     <Compile Include="ResultsParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResultsSaver.cs" />
     <Compile Include="TestRunParseExtensions.cs" />
     <Compile Include="Entities\TestType.cs" />
   </ItemGroup>

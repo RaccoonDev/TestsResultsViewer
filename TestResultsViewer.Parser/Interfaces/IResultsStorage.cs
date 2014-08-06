@@ -6,8 +6,9 @@ namespace TestResultsViewer.Parser.Interfaces
 {
     public interface IResultsStorage
     {
-        void Store(Stream inputStream);
+        void Store(Stream inputStream, string buildName);
         IEnumerable<TestRun> GetAllRuns();
-        FileStream GetOriginalContentById(string filename);
+        Stream GetOriginalContentById(string filename);
+        void DeleteAll();
     }
 }
