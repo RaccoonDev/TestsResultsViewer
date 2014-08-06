@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Build.cs" />
     <Compile Include="Entities\Counters.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\ErrorInfo.cs" />

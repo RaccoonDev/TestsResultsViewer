@@ -31,9 +31,7 @@
                     <label for="buildType">Select build: </label>
                     <select id="buildType" class="form-control" ng-model="runSearch.BuildName">
                         <option value="" selected="selected">All</option>
-                        <option value="CI">CI</option>
-                        <option value="NI">NI</option>
-                        <option value="Automation">Automation</option>
+                        <option ng-repeat="buildName in testInstances.Builds" value="{{buildName}}">{{buildName}}</option>
                     </select>
                 </div>
             </form>

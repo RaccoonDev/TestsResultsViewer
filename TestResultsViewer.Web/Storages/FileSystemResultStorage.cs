@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using TestResultsViewer.Parser;
 using TestResultsViewer.Parser.Entities;
 using TestResultsViewer.Parser.Interfaces;
@@ -63,6 +64,11 @@ namespace TestResultsViewer.Web.Storages
             {
                 file.Delete();
             }
+        }
+
+        public IEnumerable<string> GetBuildNames()
+        {
+            return Enumerable.Empty<string>();
         }
     }
 }

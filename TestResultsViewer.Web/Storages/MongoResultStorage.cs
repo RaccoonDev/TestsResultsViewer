@@ -13,6 +13,7 @@ namespace TestResultsViewer.Web.Storages
     {
         private readonly string _outputDirectory;
         private readonly MongoHelper<TestRun> _testRunHelper;
+        private readonly MongoHelper<Build> _buildHelper; 
 
         public MongoResultStorage(string outputDirectory)
         {
@@ -22,6 +23,7 @@ namespace TestResultsViewer.Web.Storages
             _outputDirectory = outputDirectory;
 
             _testRunHelper = new MongoHelper<TestRun>();
+            _buildHelper = new MongoHelper<Build>();
         }
 
         public void Store(Stream inputStream, string buildName)
@@ -30,8 +32,14 @@ namespace TestResultsViewer.Web.Storages
             {
                 var parser = new ResultsParser();
                 TestRun testRun = parser.Parse(fileStream, buildName);
+                testRun.UnitTestResults = testRun.UnitTestResults.OrderBy(x => x.TestName).ToList();
                 _testRunHelper.Collection.Save(testRun);
 
+                if (!_buildHelper.Collection.AsQueryable().Any(x => x.Name.Equals(buildName)))
+                {
+                    _buildHelper.Collection.Save(new Build() {Name = buildName});
+                }
+                
                 var newFilePath = Path.Combine(_outputDirectory, string.Format("{0}.trx", testRun.Id));
 
                 if (File.Exists(newFilePath)) File.Delete(newFilePath);
@@ -57,11 +65,17 @@ namespace TestResultsViewer.Web.Storages
         public void DeleteAll()
         {
             _testRunHelper.Collection.RemoveAll();
+            _buildHelper.Collection.RemoveAll();
             var directoryInfo = new DirectoryInfo(_outputDirectory);
             foreach (var file in directoryInfo.GetFiles("*.trx"))
             {
                 file.Delete();
             }
+        }
+
+        public IEnumerable<string> GetBuildNames()
+        {
+            return _buildHelper.Collection.FindAll().Select(x => x.Name);
         }
     }
 }

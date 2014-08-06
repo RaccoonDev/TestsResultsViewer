@@ -10,5 +10,6 @@ namespace TestResultsViewer.Parser.Interfaces
         IEnumerable<TestRun> GetAllRuns();
         Stream GetOriginalContentById(string filename);
         void DeleteAll();
+        IEnumerable<string> GetBuildNames();
     }
 }

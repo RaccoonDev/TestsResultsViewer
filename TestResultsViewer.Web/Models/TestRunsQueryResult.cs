@@ -8,8 +8,10 @@ namespace TestResultsViewer.Web.Models
         public TestRunsQueryResult()
         {
             TestRuns = new List<TestRun>();
+            Builds = new List<string>();
         }
 
         public List<TestRun> TestRuns { get; set; }
+        public List<string> Builds { get; set; } 
     }
 }

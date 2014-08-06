@@ -52,7 +52,8 @@ namespace TestResultsViewer.Web.Controllers
                 .StartNew(() => 
                     Request.CreateResponse(HttpStatusCode.OK, new TestRunsQueryResult 
                     {
-                        TestRuns = _resultsStorage.GetAllRuns().ToList()
+                        TestRuns = _resultsStorage.GetAllRuns().ToList(),
+                        Builds = _resultsStorage.GetBuildNames().ToList()
                     }
             ));
         }
