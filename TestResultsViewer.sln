@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestResultsViewer.Web", "TestResultsViewer.Web\TestResultsViewer.Web.csproj", "{D4C839AB-7681-4CBA-9273-BA9C3D2CED38}"
 EndProject
@@ -10,6 +10,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestResultsViewer.Parser", "TestResultsViewer.Parser\TestResultsViewer.Parser.csproj", "{01097FED-452A-4136-A9E1-B432D1E96AEC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestResultsViewer.Tests", "TestResultsViewer.Tests\TestResultsViewer.Tests.csproj", "{23B61FF8-1657-466F-B24B-AC90A2006D6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E847CE56-1E6C-4434-9737-D424F294CFC6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
